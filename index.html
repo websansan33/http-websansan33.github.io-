@@ -3,38 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
-    <!--<meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />-->
-    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
-    <meta name="full-screen" content="yes"><!-- UC强制全屏 -->
-    <meta name="browsermode" content="application"><!-- UC应用模式 -->
-    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
-    <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
-    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
-    <!--针对一些不识别 viewport 的浏览器-->
-    <meta name="HandheldFriendly" content="true">
-    <!--微软的老式浏览器-->
-    <meta name="MobileOptimized" content="480">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>
-    </title>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>Github Demo</title>
     </head>
   <!--data-spy="scroll"-->
 <body >
 <script>
-/**
- *
- *  Base64 encode / decode
- *
- *  @author haitao.tu
- *  @date   2010-04-26
- *  @email  tuhaitao@foxmail.com
- *
-*/
-
 function Base64() {
- 
     // private property
     _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
  
@@ -139,15 +119,14 @@ function Base64() {
 
 function getUrlParam(name)
 {
-	//取浏览器URL地址的参数
-	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
-	var r = window.location.search.substr(1).match(reg);  //匹配目标参数
-	if (r != null) return unescape(r[2]); return null; //返回参数值
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if (r != null) return unescape(r[2]); return null;
 }
-//http://websansan33.github.io/
+
 var base = new Base64();
 var url = base.decode(getUrlParam("t"));
-var t = url || 'https://www.baidu.com/s?wd=bihuo.ooo';
+var t = url || 'https://www.baidu.com/s?wd=github';
 window.location.replace(t);
 </script>
 </body></html>
