@@ -125,8 +125,12 @@ function getUrlParam(name)
 }
 
 var base = new Base64();
-var url = base.decode(getUrlParam("t"));
+var en_url=getUrlParam("t");
+var url = (en_url != null) ? base.decode(en_url) : null;
+console.log(url);
 var t = url || 'https://www.baidu.com/s?wd=github';
+console.log(t);
 window.location.replace(t);
+
 </script>
 </body></html>
