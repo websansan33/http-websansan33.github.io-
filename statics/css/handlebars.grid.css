@@ -1,0 +1,45 @@
+body{
+  height: 105vh;
+}
+.form-control{
+  float: none;
+  width: auto;
+}
+#main>.row>.panel.panel-default {
+  /*:first-of-type*/
+  margin-bottom: 0px;
+}
+.panel-default>.panel-body
+{
+  padding: 0px;
+}
+.panel-default>.panel-heading
+{
+  padding: 5px;
+}
+
+
+.outgrid
+{
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.grid [class ^="col-"]
+{
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.grid [class ^="col-"]:not(:last-child)
+{
+  border-right: 0;
+}
+#mydataTplOut{
+
+}
+#mydataTpl{
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
+}

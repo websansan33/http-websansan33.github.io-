@@ -1,0 +1,297 @@
+/*用户中心区域专用*/
+#userContent
+{
+
+	float: left;
+	/*右边总宽width: 840px; */
+	width: 100%;
+	max-width: 840px;
+	
+	/*height: auto;*/
+	/*overflow: hidden;*/
+}
+#viewBox
+{
+	height: 80px;
+	border: 1px solid #f0ebbe;/*f0ebbe*/
+	background-color: #fefbe2;/*fefbe2*/
+	padding: 15px;
+}
+#userPic
+{
+	float: left;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ccc;
+	background: url(img/UserLevel/Level_1.jpg);
+}
+#userInfo
+{
+	float: left;
+	width: 100%;
+	margin: 0px 0px;
+}
+#userInfo hr
+{
+	height:1px;border:none;border-top:1px solid #555555;
+}
+#userInfo div
+{
+	margin: 12px;
+}
+#userInfo label
+{
+	font-weight: bold;
+}
+#userInfo1,#userInfo1 *
+{
+	font-size: 15px;
+}
+#userInfo1 a,#userInfo1 span
+{
+	margin-right: 20px;
+}
+#userLogin
+{
+	color: #999;
+}
+#newNav
+{
+	background: url(img/Bg01.png) repeat-x 0px -940px;
+	/*background:url("img/fix/ssq_btns.png") no-repeat scroll -328px -180px;width: 82px;*/
+	
+	height: 37px;
+	margin-top: 10px;
+	/*-moz-border-radius:10px 15px 15px 10px;  shorthand topleft topright bottomright bottomleft */
+}
+#newNav li
+{
+	background:url("img/fix/ssq_btns.png") no-repeat scroll -328px -180px;
+	float: left;
+	width: 82px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 15px;
+	font-weight: bold;
+	
+	border-bottom: none;
+	margin-right: 2px;
+	 /*border: 1px solid #927367;background-color: #f7efdf;*/
+	text-align: center;
+	cursor: pointer;
+	
+}
+#newNav li.sel
+{
+	height: 34px;
+	line-height: 34px;
+	background:url("img/fix/ssq_btns.png") no-repeat scroll -328px -146px;
+	border-bottom: none;
+	
+	/*border: 1px solid #f46a17;background-color: #f79737;*/
+}
+#newNav li a
+{
+	font-size: 15px;
+	color: #795339;
+	display: inline-block;
+	height: 35px;
+	
+}
+#newNav li.sel a
+{
+	font-size: 15px;
+	color: #fffdee;
+}
+#moreBet
+{
+	margin: 10px;
+}
+#betTab #searchBox
+{
+	height: 32px;
+	line-height: 32px;
+}
+#betTab #searchBox span
+{
+	margin: 0px 10px;
+}
+#betTab #searchBox input
+{
+	height: 18px;
+}
+#betTab #searchBox select
+{
+	height: 22px;
+}
+.userMain
+{
+	border: 1px solid lightGrey;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px;
+	padding: 1px;
+}
+#tabTip
+{
+	background-color: #F2F2F2;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 12px;
+}
+#tabTip span
+{
+	color: red;
+	margin: 0px 3px;
+	font-weight: bold;
+}
+#tabTip b
+{
+	color: green;
+	margin: 0px 3px;
+}
+.userMain .fTab
+{
+	padding: 15px;
+}
+/*.userMain #bankList
+{
+	padding-left: 40px;
+}*/
+.newListTab
+{
+	width: 100%;
+	border: 1px solid lightGrey;
+	text-align: center;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+.newListTab th
+{
+	font-weight: normal;
+	line-height: 30px;
+	height: 30px;
+	background: #F2F2F2;
+	border-right: 1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+	padding: 0px 8px;
+}
+.newListTab td
+{
+	background: white;
+	border-right: 1px solid #EDEDED;
+	border-bottom: 1px solid #DEDEDE;
+	line-height: 30px;
+	height: 30px;
+	padding: 0px 8px;
+}
+#topInfo
+{
+	background: #F9FADC;
+	border: 1px solid #FDEBB4;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+#topInfo a
+{
+	margin: 0px 8px;
+}
+
+#inputRate
+{
+	width: 50px;
+}
+
+#filTool
+{
+	margin: 0px auto 10px auto;
+	padding: 0px 5px;
+	height: 100%;
+	overflow: hidden;
+	text-align: left;
+	color: #666666;
+}
+#filTool input,#filTool select
+{
+	margin: 0px 5px
+}
+#filTool div
+{
+	float: left;
+}
+#filTool label
+{
+	margin-right: 10px;
+	margin-left: -5px;
+}
+#dateTitle
+{
+	width: 70px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+#dateMain div
+{
+	clear: both;
+	float: none;
+	padding: 3px;
+}
+
+#giftRate
+{
+	margin: 10px;
+	padding: 10px 20px;
+	text-align: left;
+	_display: inline-block;
+	min-height: 487px;
+	height: auto!important;
+	height: 507px;
+}
+#giftRate *
+{
+	font-size: 14px;
+}
+#giftRate dl
+{
+	margin-bottom: 30px;
+	padding: 0px;
+	line-height: 25px;
+}
+#giftRate dl dt
+{
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+#giftRate dl dd
+{
+	font-size: 14px;
+	text-indent: 2em;
+	height: 30px;
+	line-height: 30px;
+}
+#giftTab th
+{
+	background-color: #F9F9F9;
+	color: #336699;
+	padding: 4px
+}
+#giftTab td
+{
+	padding: 4px;
+}
+#giftRate i
+{
+	color: #FF0000;
+	font-style: normal;
+	font-weight: bold;
+	margin: 0 2px;
+}
+#ruleRight
+{
+	margin-top: 20px;
+	text-align: left;
+	color: #666;
+}

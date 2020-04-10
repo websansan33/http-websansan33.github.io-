@@ -1,0 +1,1645 @@
+/*投注面板顶部*/
+#betTop
+{
+  /*height: auto;width: auto;background: url(img/Bg01.png) repeat-x 0px -368px;position: relative;border:1px solid #FF6600;*/
+  /*background:url("img/fix/head-bg.png") no-repeat scroll center top;height:100px;width:auto;margin-top:5px;*/
+}
+/*#betTag
+{
+width: auto;
+height: 87px;
+}*/
+/*新的投注界面彩种图标*/
+.nav_logo
+{
+  background: url("img/fix/games.png") no-repeat scroll 0 0;
+  float: left;
+  height: 80px;
+  width: 108px;
+  margin-top: 11px;
+}
+.nav_box
+{
+  background: url("img/fix/text.png") no-repeat scroll 0 0;
+  float: left;
+  height: 63px;
+  line-height: 34px;
+  margin-top: 24px;
+  text-align: right;
+  width: 297px
+}
+.nav_box h3
+{
+  display: none
+}
+.ssq_banner .nav_logo
+{
+  background-position: 10px 0
+}
+/*双色球*/
+.ssq_banner .nav_box
+{
+  background-position: 0 -157px
+}
+.cqssc_banner .nav_logo
+{
+  background-position: 10px -332px
+}
+/*重庆时时彩*/
+.cqssc_banner .nav_box
+{
+  background-position: 0 -80px
+}
+.jx11x5_banner .nav_logo
+{
+  background-position: 10px -166px
+}
+/*江西11选5*/
+.jx11x5_banner .nav_box
+{
+  background-position: 0 -313px
+}
+.dlt_banner .nav_logo
+{
+  background-position: 10px -83px
+}
+/*大乐透*/
+.dlt_banner .nav_box
+{
+  background-position: 0 -228px
+}
+.qxc_banner .nav_logo
+{
+  background-position: 10px -672px
+}
+/*七星彩*/
+.qxc_banner .nav_box
+{
+  background-position: 0 -1090px
+}
+.sd11x5_banner .nav_logo
+{
+  background-position: 10px -166px
+}
+/*山东11选5*/
+.sd11x5_banner .nav_box
+{
+  background-position: 0 -545px
+}
+.gd11x5_banner .nav_logo
+{
+  background-position: 10px -166px
+}
+/*广东11选5*/
+.gd11x5_banner .nav_box
+{
+  background-position: 0 -621px
+}
+.js11x5_banner .nav_logo
+{
+  background-position: 10px -166px
+}
+/*江苏11选5*/
+.js11x5_banner .nav_box
+{
+  background-position: 0 -697px
+}
+.zj11x5_banner .nav_logo
+{
+  background-position: 10px -166px
+}
+/*浙江11选5*/
+.zj11x5_banner .nav_box
+{
+  background-position: 0 -772px
+}
+.pl3_banner .nav_logo
+{
+  background-position: 10px -248px
+}
+/*排列3*/
+.pl3_banner .nav_box
+{
+  background-position: 0 -387px
+}
+.pl5_banner .nav_logo
+{
+  background-position: 10px -585px
+}
+/*排列5*/
+.pl5_banner .nav_box
+{
+  background-position: 0 -850px
+}
+.qlc_banner .nav_logo
+{
+  background-position: 10px -500px
+}
+/*七乐彩*/
+.qlc_banner .nav_box
+{
+  background-position: 0 -1011px
+}
+.fc3d_banner .nav_logo
+{
+  background-position: 10px -415px
+}
+/*福彩3D*/
+.fc3d_banner .nav_box
+{
+  background-position: 0 -467px
+}
+.jsk3_banner .nav_logo
+{
+  background-position: 10px -757px
+}
+/*江苏快3*/
+.jsk3_banner .nav_box
+{
+  background-position: 0 -1252px
+}
+.gdkl10_banner .nav_logo
+{
+  background-position: 10px -842px
+}
+/*广东快乐十分*/
+.gdkl10_banner .nav_box
+{
+  background-position: 0 -930px
+}
+.zc_banner .nav_logo
+{
+  background-position: 10px -928px
+}
+/*胜负彩*/
+.zc_banner .nav_box
+{
+  background-position: 0 -1172px
+}
+.pk10_banner .nav_logo
+{
+  background-position: 10px -1016px
+}
+/*北京赛车PK10*/
+.pk10_banner .nav_box
+{
+  background-position: 0 -1330px
+}
+/*星乐*/
+.xlc_banner .nav_logo
+{
+  background-position: 10px -1106px
+}
+/*星乐*/
+.xlc_banner .nav_box
+{
+  background-position: 0 -1410px
+}
+/*幸运飞艇*/
+.xyft_banner .nav_logo
+{
+  background-position: 10px -1194px
+}
+/*幸运飞艇*/
+.xyft_banner .nav_box
+{
+  background-position: 0 -1490px
+}
+/*服务时间*/
+/*#lottNote
+{
+float: left;
+margin-top: 12px;
+margin-left: 12px;
+color: #7d5620;
+line-height: 160%;
+}*/
+/*玩法介绍*/
+/*#betMoreLink
+{
+position: relative;
+float: right;
+width: 210px;
+height: auto;
+padding-top: 5px;
+padding-right: 6px;
+text-align: right;
+overflow: hidden;
+}
+#betMoreLink a
+{
+color: #0f3f94;
+}*/
+/*选号投注 参与合买 我的方案 那菜单 手机版弃用*/
+/*#tagBox
+{
+position:static;
+display:block;
+width:100%;
+height: 38px;
+padding-left: 10px;
+margin-top: 5px;
+margin-bottom: 1px;
+clear: left;
+}
+#tagBox a
+{
+display: block;
+float: left;
+width: 100px;
+height: 32px;
+line-height: 32px;
+color: #FFFFCE;
+font-weight: bold;
+font-size: 15px;
+text-align: center;
+margin-right: 5px;
+background-color: #E14900;
+border-radius:15px;
+}
+#tagBox a.sel
+{
+color: #FFF;
+background-color:#D22226;
+
+}*/
+
+/*#betgift{
+display: block;
+float: right;
+width: auto;
+height: 32;
+font-size: 15px;
+line-height: 32px;
+text-align: right;
+color: #E14900;
+margin-right: 20px;
+}*/
+/*倒计时,期号,是一个悬浮层*/
+#betTips
+{
+  padding-left: 5px;
+  text-align: center;
+}
+#betTips > #qh{
+  font-size: 13px;
+}
+#timerQihao
+{
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+  color: #F30;
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
+#timerTxt
+{
+  float: left;
+  font-size: 13px;
+}
+#timer
+{
+  /*分秒*/
+  float: left;
+  width: auto;
+  height: auto;
+  color: #F30;
+  font-size: 15px;
+}
+#timer b
+{
+  font-size: 16px;
+  color: #F30;
+  font-family: "Arial Black";
+  font-weight: bold;
+}
+#timer i
+{
+  font-size: 16px;
+  color: #F30;
+  font-weight: bold;
+}
+#timer span
+{
+  font-size: 16px;
+  color: #F30;
+}
+/*倒计时面板结束*/
+/*玩法大类选择导航条灰色渐变背景*/
+/*#playselect{
+border-bottom:1px solid #e9bc72;
+height: 42px;
+background-image: -webkit-linear-gradient(270deg,#d7d2d0 0%,#fff 100%);
+background-image: linear-gradient(180deg,#d7d2d0 0%,#fff 100%);
+filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#d7d2d0',endColorStr='#ffffff',gradientType=0);
+border-radius: 5px 5px 0px 0px;
+clear: left;
+}*/
+
+.btn-group
+{
+  padding: 0px 2px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.btn-group>li.seled,
+.btn-group>li:checked,
+.btn-group>li:focus,
+.btn-group>li:active
+{
+  background-color: #1771d2;
+  color: #fefccd;
+}
+
+/*调节玩法大类红色按钮左边距*/
+/*
+#playType
+{
+float: left;
+padding-left: 6px;
+overflow: hidden;
+}
+#playType div
+{
+float: left;
+color:#333;
+width: 82px;
+height: 34px;
+line-height: 34px;
+margin-top: 8px;
+margin-right: 3px;
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+cursor: pointer;
+background:url("img/fix/ssq_btns.png") no-repeat scroll -328px -180px;
+}
+#playType div .red
+{
+font-size: 12px;
+cursor: pointer;
+}
+#playType div:hover
+{
+color: red;
+}
+#playType div.seled
+{
+color:#fff;
+background:url("img/fix/ssq_btns.png") no-repeat scroll -328px -146px;
+}
+#playType div.seled s
+{
+float: left;
+}
+#playType div a
+{
+color: #333;
+}*/
+
+/*#orderTab
+{
+border: 1px solid #B0D0F6;
+border-top: none;
+padding: 1px;
+}
+*/
+/*#panelLeft
+{
+height: auto;
+overflow: hidden;
+width: 730px;
+float: left;
+margin-top: 10px;
+border-top: 1px solid #f5cc9c;
+}*/
+/*#betMain
+{
+width: 728px;
+height: auto;
+overflow: hidden;
+border: 1px solid #f5cc9c;
+border-top: none;
+}*/
+/* 菜种子类选择面板 */
+#subPanel
+{
+  padding: 0px 0px;
+  background-color: #fcfcfc;
+  margin-bottom: 0px;
+}
+#subPanel dt,#subPanel dd
+{
+  display: none;
+}
+#subPanel dt input
+{
+  margin-right: 3px;
+  /*width: 12px;*/
+}
+#subPanel dt label
+{
+  margin-right: 1px;
+}
+#subPanel .show
+{
+  display: block;
+}
+
+/*选号模式*/
+#msSpan
+{
+  /*float: right;*/
+  color: #9b5b31
+}
+#msSpan label
+{
+  margin-right: 8px;
+}
+/*顶上玩法模式说明*/
+#tipPanel
+{
+  padding: 6px 10px;
+  height: auto;
+  overflow: hidden;
+  line-height: 20px;
+  background-color: #fffdd9;
+  border-top: 1px solid #efefef;
+  color: #666;
+
+}
+#tipPanel b
+{
+  font-weight: normal;
+  color: red;
+  margin: 0px 2px;
+}
+
+/*#panelRight
+{
+float: right;
+margin-left: 10px;
+}
+#panelRight div.winDiv3
+{
+width: 260px;
+margin-top: 10px;
+}
+#betBbs.winDiv3 .winMain
+{
+height: auto;
+overflow: hidden;
+padding: 5px;
+}*/
+#betOpen.winDiv3 .winMain
+{
+  height: auto;
+  overflow: hidden;
+  padding: 1px;
+}
+/*表格的样式*/
+#codeTab td,#codeTab th
+{
+  height: 28px;
+  line-height: 28px;
+  border: none;
+}
+#codeTab
+{
+  /*font-family:courier new,courier,monospace;
+  font-family:Arial,Verdana,Tahoma;*/
+  border: none;
+}
+#betPrize.winDiv3 .winMain
+{
+  height: auto;
+  overflow: hidden;
+  padding: 1px;
+}
+#prizeTab
+{
+  border: none;
+}
+#prizeTab th,#prizeTab td
+{
+  border: none;
+}
+/*选号球面板样式*/
+#ballPanel
+{
+  margin-left: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#ballPanel dt
+{
+  display: none;
+}
+/* 全大小单双清按钮组 */
+#ballPanel dt span
+{
+  display: block;
+  margin-left: 36px;
+}
+/* 手机版适配 */
+@media (min-width: 480px)
+{
+  #ballPanel dt span
+  {
+    display: inline;
+    text-align: auto;
+    margin: 5px 5px;
+  }
+  #ballPanel dt
+  {
+    float: none;
+  }
+  /*#ballPanel dt#boxpane b:nth-child(7)::before
+  {
+  content: "\A";
+  white-space: pre-wrap;
+  }*/
+}
+
+#ballPanel dt a
+{
+  display: inline-block;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  color: #003;
+  border: 1px solid #003;
+  border-radius: 3px;
+  margin: 0px 3px;
+  /*background: url(img/Bg01.png) -116px -503px;*/
+  cursor: pointer;
+}
+/* 选号球下面的遗漏dd 手机版弃用 */
+#ballPanel dd
+{
+  margin-bottom: 2px;
+  display: none;
+}
+
+#ballPanel label
+{
+  width: 33px;
+  height: 19px;
+  line-height: 19px;
+  text-indent: 3px;
+  margin-right: 2px;
+  display: inline-block;
+}
+/* 选号球下面的遗漏dd 手机版弃用 */
+#ballPanel dd label
+{
+  color: #aaa;
+}
+/*选注球*/
+#ballPanel b
+{
+  font-family: 'microsoft yahei','courier new',courier,monospace;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  color: #333;
+  text-align: center;
+  background: url(img/ball.png);
+  margin: 0px 1px;
+  cursor: pointer;
+}
+
+#ballPanel b:hover
+{
+  background: url(img/ball.png) no-repeat 1px -203px;
+  color: #f90;
+}
+#ballPanel b.sel
+{
+  background: url(img/ball.png) no-repeat 1px -232px;
+  color: #fff;
+}
+
+/*多字符使用圆角框*/
+#ballPanel dt#boxpane b
+{
+  font-family: 'microsoft yahei','courier new',courier,monospace;
+  background-image: none;
+  background-color: #e8e7e6;
+  border: 1px solid #b9b6b3;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 40px;
+  height: 28px;
+  line-height: 28px;
+  color: #333;
+  text-align: center;
+  margin: 0px 1px;
+  cursor: pointer;
+}
+/*以后改造 dt:has(> b.boxpane)*/
+#ballPanel dt#boxpane b:hover
+{
+  background-image: none;
+  background-color: #fa7905;
+  border-color: #ac6402;
+  color: #333;
+}
+#ballPanel dt#boxpane b.sel
+{
+  background-image: none;
+  background-color: #fa7905;
+  border-color: #ac6402;
+  color: #fff;
+  background: radial-gradient(at 35px 35px, #FFF, #fa7905, #FFF);
+  background: -webkit-radial-gradient(35px 35px, #FFF, #fa7905, #FFF);
+}
+
+#ballPanel dt#boxpane br+b
+{
+  margin-left: 40px;
+}
+
+/* 选号球下面的遗漏dd 手机版弃用 */
+#ballPanel i
+{
+  display: inline-block;
+  width: 28px;
+  height: 20px;
+  line-height: 20px;
+  color: #aaa;
+  text-align: center;
+  background: url(img/ball.png) 1px -370px;
+  margin: 0px 3px;
+  font-style: normal;
+}
+
+#ballPanel s
+{
+  width: 58px;
+  height: 19px;
+  display: inline-block;
+  margin-right: 8px;
+}
+/*占位 不显示文字和背景 快乐十分彩种用到*/
+#ballPanel .show
+{
+  display: block;
+}
+
+#uploadPanel
+{
+  text-align: center;
+}
+#uploadPanel p
+{
+  width: 500px;
+  margin: 0px auto;
+  padding: 8px 5%;
+  line-height: 180%;
+  text-align: left;
+}
+#uploadTmpBox
+{
+  width: 400px;
+  margin: 0px auto;
+  padding: 0px;
+}
+#uploadTmp
+{
+  margin-top: 10px;
+  overflow-y: scroll;
+  width: 100%;
+  height: 120px;
+}
+#uploadIframe
+{
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+}
+
+/*#selArrow
+{
+background: url(img/SelArrow.png) no-repeat 20px 0px;
+height: 28px;
+}*/
+#butDiv
+{
+  /*padding-left: 210px;*/
+  /*margin-left: 15px;
+  margin-right: 15px;*/
+  height: 40px;
+}
+#butDiv div
+{
+  /*float: left;*/
+  margin: 0px 5px;
+  cursor: pointer;
+}
+/*#btnClearBall
+{
+width: 137px;
+height: 36px;
+background: url(img/Bg01.png) 0px -678px
+}*/
+/*#btnAdd
+{
+width: 137px;
+height: 36px;
+background: url(img/Bg01.png) 0px -641px
+}*/
+#selDetail
+{
+  float: none;
+  clear: both;
+  margin-top: 3px;
+  height: 18px;
+  text-align: center;
+  font-size: 13px;
+}
+#selDetail b
+{
+  color: red;
+  margin: 0px 2px;
+}
+
+
+/*已选注列表*/
+#codeDiv
+{
+  /*width: 100%;*/
+  height: auto;
+  overflow: hidden;
+  margin: 5px 5px;
+}
+
+#codeList
+{
+  border: 1px solid #E0E2E1;
+  margin: 0px;
+  background-color: #dfffed;
+  list-style: none;
+  padding: 5px;
+  width: 100%;
+  height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  line-height: 20px;
+  float: left;
+}
+#codeList li
+{
+  cursor: pointer;
+  border-bottom: 1px dashed #aaa;
+  margin: 0px;
+  width: 100%;
+  padding: 3px 8px;
+  color: #ff0000;
+  height: auto;
+  line-height: 20px;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+  vertical-align: bottom;
+}
+#codeList li:hover
+{
+  background-color: #fcf7e4;
+}
+#codeList li span.iblock
+{
+  display: inline-block;
+  float: left;
+}
+#codeList li span.block
+{
+  display: block;
+}
+#codeList li span u
+{
+  color: #a40000;
+  text-decoration: none;
+}
+#codeList li span b
+{
+  font-weight: normal;
+}
+#codeList li s
+{
+  float: right;
+  text-decoration: none;
+}
+#codeList li i
+{
+  font-style: normal;
+  margin: 0px 8px;
+  color: #ff9900;
+}
+#codeList li a
+{
+  float: right;
+  display: block;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: auto;
+  height: 17px;
+  line-height: 17px;
+  border: #fabb7c 1px solid;
+  background-color: #ffefc6;
+  color: #922f12;
+}
+#codeList li a:hover
+{
+  text-decoration: none;
+  color: red;
+}
+
+#rndSel li a s
+{
+  text-decoration: none;
+}
+
+/*机选按钮*/
+/*#rndSel
+{
+float: left;
+height: auto;
+overflow: hidden;
+padding: 0px 10px;
+padding-top: 2px;
+}
+#rndSel li
+{
+margin-bottom: 12px;
+text-decoration: none;
+}
+#rndSel a s
+{
+padding: 0 10px 0 10px;
+}*/
+
+#betDetail
+{
+  /*float: none;*/
+  display: block;
+  position: fixed;
+  background-color: #ede6dc;
+  /*clear: both;*/
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+}
+#buyButDiv
+{
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+}
+/*购买按钮*/
+/*#buyButton
+{
+display: inline-block;
+background: url(img/Bg01.png) 0px -715px;
+width: 130px;
+height: 45px;
+margin: auto 0px;
+}*/
+
+#hemaiPanel
+{
+  margin-top: 20px;
+  padding: 8px;
+  height: auto;
+  line-height: 20px;
+  overflow: hidden;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #fdecb7;
+  background-color: #fffbd9;
+  float: none;
+  clear: both;
+}
+#keepPanel
+{
+  padding: 8px;
+  height: auto;
+  line-height: 20px;
+  overflow: hidden;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fdecb7;
+  background-color: #fffbd9;
+  float: none;
+  clear: both;
+}
+#extenHemai,#extenKeep
+{
+  display: none;
+  margin-top: 5px;
+  height: auto;
+  overflow: hidden;
+  padding: 5px;
+  border-top: 1px dashed #CCCCCC;
+  width: 100%; /*IE5.5fix*/
+}
+#hmTab
+{
+  width: 100%;
+  background-color: #FFFFFF;
+}
+#hmTab th
+{
+  text-align: right;
+  background-color: #FFFFFF;
+  color: #CC6600;
+  padding-right: 10px;
+  vertical-align: top;
+}
+#hmTab td
+{
+  text-align: left;
+  background-color: #FFFFFF;
+  line-height: 150%;
+  padding-left: 8px;
+}
+#hm_title,#hm_content,#hm_buyer
+{
+  width: 350px;
+}
+#hm_feng,#hm_pass,#hm_baodi,#hm_ifeng
+{
+  width: 80px;
+}
+#hm_buyer,#hm_content
+{
+  margin: 3px 0px;
+  height: 60px;
+  overflow-y: scroll;
+}
+.hemaiSet
+{
+  border-bottom: 1px solid #eee;
+  background-color: #FFF;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px;
+}
+.hemaiSet th
+{
+  font-weight: normal;
+  background-color: #FCFCFC;
+  width: 120px;
+  text-align: center;
+  color: #333;
+}
+.hemaiSet td
+{
+}
+.hemaiSet ul
+{
+  list-style: none;
+  margin: 10px;
+}
+.hemaiSet ul li
+{
+  padding: 4px 0px;
+  float: none;
+  clear: both;
+}
+.hemaiSet li label
+{
+  margin-right: 15px;
+}
+/*我要保底*/
+.hemaiSet li u label
+{
+  margin-right: 0px;
+  color: #c47409;
+}
+.hemaiSet u
+{
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  width: 85px;
+  color: #c47409;
+  margin-right: 10px;
+  text-align: right;
+}
+#hmSetMore
+{
+  background-color: #FCFCFC;
+  height: 32px;
+  line-height: 32px;
+}
+#hmSetMore span
+{
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  margin-right: 15px;
+}
+#hmSetMorePanel
+{
+  display: none;
+}
+#hmUserLi
+{
+  padding-left: 20px;
+}
+#hmUserLi label
+{
+  /*margin-right: 40px;*/
+}
+#hmUserSet
+{
+  display: none;
+}
+#selKeepQiByShortCut
+{
+  padding: 4px;
+}
+#selKeepQiByShortCut a
+{
+  margin-left: 8px;
+  cursor: pointer;
+}
+#keepQi
+{
+  width: 50px;
+  text-align: center;
+}
+#keepTab
+{
+  margin: 5px auto 0px auto;
+  background-color: #FFFFFF;
+}
+#keepTab td,#keepTab th,#keepTab input
+{
+  text-align: center;
+}
+#keepTab th
+{
+  color: #5f371f;
+  background-color: #f0cc9b
+}
+/*#noKeepBeishu,#keepTab input
+{
+width: 50px;
+text-align: center;
+color: red;
+font-weight: bold;
+}*/
+#keepTab .bg
+{
+  background-color: #F6F6F6;
+  color: #CCCCCC;
+}
+.panelTip
+{
+  color: #666;
+  float: right;
+  line-height: 12px;
+  margin-top: 4px
+}
+
+#openTab
+{
+  margin-top: 10px;
+}
+#openTab.winDiv3 .winMain
+{
+  height: auto;
+  overflow: hidden;
+  padding: 0px;
+}
+#botCodeTab
+{
+  width: 100%;
+}
+#botCodeTab table
+{
+  width: 100%;
+  background-color: #FFF;
+}
+#botCodeTab td.line
+{
+  border-left: 1px solid #DDDFE7;
+}
+#botCodeTab th
+{
+  background: url(img/Bg01.png) repeat-x 0px -979px;
+  font-weight: normal;
+}
+#botCodeTab th,#botCodeTab td
+{
+  text-align: center;
+  height: 24px;
+  background-color: #F9F9F9;
+}
+#botCodeTab th.qiTd
+{
+  width: 35px;
+}
+
+/*.stopQiTip #msgAlertContent
+{
+height: auto;
+overflow: ;
+padding: 10px 10px 10px 10px;
+}*/
+
+#iFeng
+{
+  padding: 3px;
+}
+
+/*PlanPanel Begin*/
+.dialogBoxTitle
+{
+  height: 29px;
+  line-height: 29px;
+  overflow: hidden;
+  color: #000000;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #fcb85c;
+}
+#planDialog
+{
+  width: 660px;
+  height: 480px;
+  height /*IE5.5*/:490px;
+  margin-left: -330px!important;/*FF IE7 该值为本身宽的一半 */
+  margin-top: -240px!important;/*FF IE7 该值为本身高的一半*/
+  margin-top: 0px;
+  position: fixed!important;/* FF IE7*/
+  position: absolute;/*IE6*/
+  _top: expression(eval(document.compatMode &&
+  document.compatMode=='CSS1Compat') ?
+  documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :
+  document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+
+  /*IE6*/
+  /*IE5 IE5.5*/
+}
+
+#planDialogTool
+{
+  height: 100px;
+  background-color: #F9F9F9;
+}
+
+#planDialogTool ul
+{
+  float: left;
+  margin: 0px;
+  padding: 5px 0px;
+}
+#planDialogTool ul li
+{
+  text-align: left;
+  padding-left: 70px;
+  height: 28px;
+  line-height: 28px;
+}
+#planDialogTool #planDialogToola
+{
+  width: 260px;
+}
+#planButton
+{
+  height: 40px;
+  line-height: 40px;
+  background-color: #F6F6F6;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}
+#planButton input
+{
+  margin: 5px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100px;
+  height: 27px;
+  color: #666666;
+}
+#planHeadTab,#planContentTab
+{
+  width: auto;
+  border: 0px solid #CCCCCC;
+}
+#planContentTab td
+{
+  height: 22px;
+  line-height: 22px;
+  border-bottom: 1px solid #EEE;
+  border-right: 1px solid #EEE;
+  text-align: center
+}
+#planContentTab td b
+{
+  color: red;
+  font-weight: normal;
+  margin-right: 2px;
+}
+#planHeadTab th
+{
+  font-weight: normal;
+  height: 25px;
+  line-height: 25px;
+  background-color: #fff3d7;
+  border-bottom: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+#planTabDiv
+{
+  height: 280px;
+  overflow-y: scroll;
+}
+#closePlanPanel
+{
+  display: block;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  /*background: url(img/Bg01.png) -145px -507px;*/
+  background: url("img/fix/iDialogClose.png") no-repeat scroll 0 0;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;*
+  cursor /*IE5.5*/:hand;
+}
+#openPlanPanelButton
+{
+  width: 100px;
+  height: 28px;
+  color: red;
+}
+.planw1
+{
+  width: 100px
+}
+.planw2
+{
+  width: 85px
+}
+.planw3
+{
+  width: 85px
+}
+.planw4
+{
+  width: 17px;
+}
+.planTd1
+{
+  background-color: #F9F9F9;
+}
+.planTd2
+{
+  background-color: #FFFFFF;
+}
+/*PlanPanel End*/
+
+.codeslist
+{
+  MARGIN: 2px;
+  TEXT-ALIGN: left
+}
+.codeslist DT
+{
+  FONT-SIZE: 12px;
+  FLOAT: left;
+  WIDTH: 16%;
+  LINE-HEIGHT: 24px;
+  LETTER-SPACING: 0px;
+  HEIGHT: 22px;
+  padding-top: 1px;
+  border-bottom: 1px dotted #999;
+}
+.codeslist DD
+{
+  CLEAR: both
+}
+
+
+.tradelist
+{
+  MARGIN: 2px;
+  TEXT-ALIGN: left
+}
+.tradelist DT
+{
+  FONT-SIZE: 12px;
+  FLOAT: left;
+  WIDTH: 14%;
+  LINE-HEIGHT: 24px;
+  LETTER-SPACING: 0px;
+  HEIGHT: 22px;
+  padding-top: 1px;
+  border-bottom: 1px dotted #999;
+}
+.tradelist DD
+{
+  CLEAR: both
+}
+
+
+/*小的开奖号码圆*/
+.r_blue_btn, .r_red_btn
+{
+  /*display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: url("img/jd_qiu_all.png") no-repeat scroll -60px -220px transparent;
+  margin-right: 2px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: #FFF;*/
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 2px;
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url("img/jd_qiu_all.png") no-repeat scroll -60px -220px transparent;
+  /*-webkit-border-radius: 100px;*/
+}
+
+.r_blue_btn
+{
+  background-position: -85px -220px;
+}
+
+em, i, s
+{
+  font-style: normal;
+}
+
+
+/*.c_E00910, a.c_E00910:link, a.c_E00910:visited
+{
+color: #E00910;
+}*/
+
+/*.winMain
+{
+padding: 0px 10px 10px;
+border-top: 0px none;
+}*/
+
+
+.currenAward
+{
+  font-family: Arial;
+  /*padding: 5px 0px 10px;*/
+  margin-right: 5px;
+}
+
+/*大的开奖号码圆*/
+@keyframes bounce
+{
+  from, to
+  {
+    transform: translateY(1px) scaleY(1);
+  }
+  90%
+  {
+    transform: translateY(0px) scaleY(1);
+  }
+}
+.currenAward .awardBall
+{
+  display: inline-block;
+  /*float: left;*/
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 4px;
+  color: white;
+  text-align: center;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  background-color: red;
+  -moz-border-radius: 100px;
+  position: relative;
+
+  /*behavior:url(/iefix/pie.php);*/
+  /*渐变*/
+  /*background-image: radial-gradient(ellipse farthest-corner at 25% 25%, #f00,#470a0a);*/
+  /*动画*/
+  /*background: url("img/fix/index_optimize.png") no-repeat scroll -310px -132px transparent;*/
+  /*
+  transform-origin: center bottom;
+  animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;*/
+
+}
+/*.dice
+{
+  position: relative;
+  display: inline-block;
+  filter: glow(color=#000000, strength=2);
+  text-shadow: 0 0 0.2em #f87,-0 -0 0.2em #000;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 1px;
+  color: white;
+  background-color: #fefe01;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}*/
+.dice
+{
+  display: inline-block;
+  position: relative;
+  background-image: url("img/dice.png");
+  background-size:26px;
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  /*background-size: auto;*/
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 5px;
+}
+.dice.dice_1
+{
+  background-position: 0 0; /* 起步坐标 */
+}
+.dice.dice_2
+{
+  background-position: 0px -22px;
+}
+.dice.dice_3
+{
+  background-position: 0px -44px;
+}
+.dice.dice_4
+{
+  background-position: 0px -66px;
+}
+.dice.dice_5
+{
+  background-position: 0px -88px;
+}
+.dice.dice_6
+{
+  background-position: 0px -110px;
+}
+
+.diceadd
+{
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  filter: glow(color=#000000, strength=2);
+  text-shadow: 0 0 0.2em #f87,-0 -0 0.2em #000;
+  color: white;
+  background-color: #f51e05;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/*.awardpk10.sm{
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 11px;
+}*/
+
+.awardpk10
+{
+  position: relative;
+  display: inline-block;
+  /*  float: left;*/
+  filter: glow(color=#000000, strength=2);
+  text-shadow: 0 0 0.2em #f87,-0 -0 0.2em #000;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 1px;
+  color: white;
+  background-color: #313c3c;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.currenAward .awardpk10_01
+{
+
+  background-color: #fefe01;
+
+}
+.currenAward .awardpk10_02
+{
+
+  background-color: #0e8bf1;
+
+}
+.currenAward .awardpk10_03
+{
+
+  background-color: #313c3c;
+
+}
+.currenAward .awardpk10_04
+{
+
+  background-color: #fa8005;
+
+}
+.currenAward .awardpk10_05
+{
+
+  background-color: #80eff9;
+
+}
+.currenAward .awardpk10_06
+{
+
+  background-color: #2360dc;
+
+}
+.currenAward .awardpk10_07
+{
+
+  background-color: #d6d5d3;
+
+}
+.currenAward .awardpk10_08
+{
+
+  background-color: #f51e05;
+
+}
+.currenAward .awardpk10_09
+{
+
+  background-color: #68251e;
+
+}
+.currenAward .awardpk10_10
+{
+
+  background-color: #46c23d;
+
+}
+
+#user_shadow
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3000px;
+  background: #000;
+  z-index: 10003;
+  opacity: 0.3;
+  filter: alpha(opacity = 30);
+  display: none
+}
+
+.helptip
+{
+  position: absolute;
+  color: rgb(83, 134, 93);
+  right: 1px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  cursor: pointer;
+}
+

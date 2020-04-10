@@ -1,0 +1,11 @@
+/*#msgDiv{height:150px;width:350px;line-height:150px;}*/
+#msgDiv a{margin:0px 20px;padding:5px 12px;border:1px solid #999999;font-size:14px;color:#666666;background-color:#EEEEEE;}
+#msgDiv a:hover{color:#FF6600;border:1px dashed #FF6600;background-color:#FFFFFF;}
+/*SMB Start*/
+#timerBox{height:auto;overflow:hidden;margin:0px;padding:0px;margin-left:50px;padding-top:1px;}
+#timerBox div{float:left;}
+#timerBox #timerTip{background-color:#3399ff;color:white;border:1px solid #3399ff;height:15px;line-height:15px;_height /*IE5.5*/:17px;}
+#timerBox #orderTimer{margin:0px;padding:0px 8px;font-weight:bold;background-color:#FFFFFF;border:1px solid #3399ff;color:#FF6600;height:15px;line-height:15px;_height /*IE5.5*/:17px;}
+#timerBox div.clock{height:17px;}
+#noBankPage{height:17px;line-height:17px;color:#336699;}
+/*SMB end*/

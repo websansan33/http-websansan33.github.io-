@@ -1,0 +1,621 @@
+@font-face {
+  font-family: 'UnidreamLED';
+  src: url(../fonts/unidreamled/UnidreamLED.eot); /***兼容ie9***/
+  src: url(../fonts/unidreamled/UnidreamLED.eot?#iefix)format('embedded-opentype'), /***兼容ie6-ie8***/
+  url('../fonts/unidreamled/UnidreamLED.woff') format('woff'),
+  local('UnidreamLED'), url("../fonts/unidreamled/UnidreamLED.woff");/***默认使用本地的***/
+}
+a,img
+{
+  border: 0;
+}
+ul,li{
+  list-style-type: none;
+  padding: 0;
+}
+
+.rotary
+{
+  position: static;
+  width: 100%;
+  /*min-height: 700px;*/
+  height: 100%;
+  /*left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;*/
+  /*margin: 0;*/
+  background: #d71f2e;
+}
+.rotary:before{
+  content: "";
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/sunlignt.png)  no-repeat;
+  background-size: 160%;
+  background-position: center top;
+}
+
+
+#blanceinfo{
+  position: relative;
+  width: 100%;
+  height: 32px;
+}
+#blanceinfo i{
+  position: absolute;
+  top: 3px;
+  color: #fe011b;
+  min-width: 24%;
+  /*max-width: 50%;*/
+  height: 30px;
+  line-height: 30px;
+  padding: 0 2px;
+  /*text-align: center;*/
+  font-size: 1.2em;
+  font-family: 'UnidreamLED';
+  letter-spacing: 1px;
+  font-style: normal;
+  background-color: #fff8c4;
+
+  transition: border linear .2s,box-shadow linear .5s;
+  -moz-transition: border linear .2s,-moz-box-shadow linear .5s;
+  -webkit-transition: border linear .2s,-webkit-box-shadow linear .5s;
+  /*outline: none;*/
+  outline: 2px solid #941d2c;
+  border-color: rgba(93,149,242,.75);
+  box-shadow: 0 0 8px #f95d5d inset;
+  -moz-box-shadow: 0 0 8px #f95d5d inset;
+  -webkit-box-shadow: 0 0 8px #f95d5d inset;
+
+}
+#blanceinfo i:nth-of-type(1){
+  /*float: left;*/
+  left: 0;
+  /*left: 5px;*/
+}
+#blanceinfo i:nth-of-type(2){
+  /*right: 5px;*/
+  margin: 0 38%;
+  width: auto;
+  left: 0;
+  right: 0;
+}
+#blanceinfo i:nth-of-type(3){
+  /*float: right;*/
+  right: 0;
+  /*right: 5px;*/
+}
+#blanceinfo i:nth-of-type(1):before{
+  content: "兑换";
+  position: relative;
+  vertical-align: middle;
+  background-color: #af1629;
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 3px;
+  /*top: 0;
+  left: 0;*/
+  letter-spacing: 0px;
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 2px 3px;
+}
+#blanceinfo i:nth-of-type(2):before{
+  content: "在线";
+  position: relative;
+  vertical-align: middle;
+  background-color: #14b137;
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 3px;
+  /*top: 0;
+  left: 0;*/
+  letter-spacing: 0px;
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 2px 3px;
+}
+#blanceinfo i:nth-of-type(3):before{
+  content: "投注";
+  position: relative;
+  vertical-align: middle;
+  background-color: #2c4a9a;
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 3px;
+  /*top: 0;
+  left: 0;*/
+  letter-spacing: 0px;
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 2px 3px;
+}
+
+/*圆盘定义3种金额*/
+.pan
+{
+  position: relative;
+  top: 5px;
+  /*margin: 10px 55px;*/
+  /*zoom: 0.5;*/
+  /*width: 486px;
+  height: 486px;*/
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.routette{
+  border: 0;
+  width: 300px;
+  height: 300px;
+  background: url(/images/routette.png)  no-repeat;
+  background-size: cover;
+}
+
+.routette i
+{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  margin-left: -23px;
+  margin-top: 25px;
+  width: 60px;
+  height: 60px;
+  /*background: url(/images/mobile/headico.png) no-repeat;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.routette i:nth-of-type(2){
+  transform: rotate(45deg);
+  transform-origin: 23px 126px;
+}
+.routette i:nth-of-type(3){
+  transform: rotate(90deg);
+  transform-origin: 23px 126px;
+}
+.routette i:nth-of-type(4){
+  transform: rotate(135deg);
+  transform-origin: 23px 126px;
+}
+.routette i:nth-of-type(5){
+  transform: rotate(180deg);
+  transform-origin: 23px 126px;
+}
+.routette i:nth-of-type(6){
+  transform: rotate(225deg);
+  transform-origin: 23px 126px;
+}
+.routette i:nth-of-type(7){
+  transform: rotate(270deg);
+  transform-origin: 23px 126px;
+}
+.routette i:nth-of-type(8){
+  transform: rotate(315deg);
+  transform-origin: 23px 126px;
+}
+/*.level3
+{
+background-position: 0px 0px;
+}
+.level2
+{
+background-position: 0px -302px;
+}
+.level1
+{
+background-position: 0px -605px;
+}*/
+/* 中间箭头 */
+.rotaryArrow
+{
+  position: absolute;
+  /*left: 62px;
+  top: 63px;*/
+  left: 62px;
+  top: 62px;
+  /*width: 294px;
+  height: 294px;*/
+  width: 178px;
+  height: 178px;
+  cursor: pointer;
+  background-image: url(/images/arrow2.png);
+  background-size: cover;
+}
+
+.list
+{
+  /*position: absolute;
+  right: 0px;
+  top: 30px;*/
+  /*width: 90%;*/
+}
+/*.list h3
+{
+  display: none;
+}*/
+/*.list li
+{
+  height: 27px;
+  font: 12px/27px "Microsoft Yahei";
+  color: #ffea76;
+  text-indent: 20px;
+  background: url(/images/user.png) 0 no-repeat;
+  overflow: hidden;
+}*/
+.selectpan
+{
+  /*position: relative;
+  width: 100%;
+  height: 46px;
+  margin-left: 0px;*/
+  margin-top: 10px;
+  width: 90%;
+}
+.btn-group{
+  margin-left: 0;
+}
+.pointbutton
+{
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+}
+.pointbutton,
+.sel,
+.pointbutton:hover
+{
+  /*opacity: filter: alpha(opacity=100); ie8黑块*/
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  background-color: #68df92;
+  /*background-position-y: -35px;*/
+}
+
+.comm
+{
+  padding: 10px;
+  margin: 0px 10px;
+  /* font: 字体大小/行间距离 "Microsoft Yahei"; */
+  font: 14px/20px "Microsoft Yahei";
+  color: #ffea76;
+  text-indent: 25px;
+}
+
+.close{
+  color: #762547;
+  filter: alpha(opacity=100);
+}
+.result
+{
+  display: none;
+  position: absolute;
+  width: 75%;
+  height: 36px;
+  padding: 3px;
+  border: 2px solid #854e38;
+  left: 0; /* 绝对定位自动居中办法 */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;    /* 有了这个就自动居中了 */
+  background-color:#ffec91;
+  opacity: .9;
+  /*filter: alpha(opacity=90);*/
+}
+.result p
+{
+  padding: 2px 2px 0;
+  font: 18px "Microsoft Yahei";
+  font-weight: 300px;
+  color: #0b7ee8;
+  text-align: center;
+}
+.result em
+{
+  color: #ffea76;
+  font-style: normal;
+}
+
+.showbet{
+  display: block;
+  width: 100%;
+  /*background: #ea159a;*/
+  /*平分*/
+  /*text-align:justify;*/
+  /*text-align-last:justify;*/
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.showbet s{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  line-height: normal;
+  min-width: 12%;
+  /*height: 30px;*/
+  top: 0px;
+  left: 0;
+  /*background-color: #fff8c4;*/
+  padding: 0 0.16em;
+  margin: 0px auto;
+  font-size: 1.6em;
+  text-align: center;
+  font-family: 'UnidreamLED';
+  letter-spacing: 2px;
+  color: #ff0006;
+
+  background: -webkit-linear-gradient(top, transparent 15px, rgb(39,45,57) 0), -webkit-linear-gradient(left, transparent 15px,rgb(39,45,57) 0);
+  background-size: 16px 16px;
+  background-color: rgb(3,9,23);
+
+  /*transition: border linear .2s,box-shadow linear .5s;
+  -moz-transition: border linear .2s,-moz-box-shadow linear .5s;
+  -webkit-transition: border linear .2s,-webkit-box-shadow linear .5s;*/
+  /*outline: none;*/
+  border: 2px solid #a51b0c;
+  /*border-color: rgba(93,149,242,.75);*/
+  /*box-shadow: 0 0 8px #f95d5d inset;*/
+  /*-moz-box-shadow: 0 0 8px #f95d5d inset;
+  -webkit-box-shadow: 0 0 8px #f95d5d inset;*/
+}
+
+.lcdscreen{
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: normal;
+  min-width: 12%;
+  padding: 0 0.16em;
+  margin: 0px auto;
+  font-size: 1.6em;
+  text-align: center;
+  font-family: 'UnidreamLED';
+  letter-spacing: 2px;
+  color: #f00f14;
+  background: -webkit-linear-gradient(top, transparent 15px, rgb(39,45,57) 0), -webkit-linear-gradient(left, transparent 15px,rgb(39,45,57) 0);
+  background-size: 16px 16px;
+  background-color: rgb(3,9,23);
+  border: 2px solid #a51b0c;
+}
+
+.controlpanel{
+  display: block;
+  border: 1px solid #FFF;
+  border-radius: 5%!important;
+  padding-top: 0.3em;
+  /*background: #27c57a; 天蓝*/ 
+  background: #4be126;
+
+  /*梯型*/
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(.8em) rotateX(.3deg) translateY(2px);
+  transform: perspective(.8em) rotateX(.3deg) translateY(2px);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.controlstart{
+  /*margin-top: 10px;*/
+  width: 100%;
+  /*background: #267bd9;*/
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.prizetip{
+  display: block;
+  width: 100%;
+  background: #090909;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.prizetip li{
+  display: inline-block;
+  min-width: 12%;
+  padding: 0 0.2em;
+  margin: 0px auto;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: 300;
+  font-size: 1.1em;
+  
+}
+
+.selectbet{
+  /*margin-top: 10px;*/
+  display: block;
+  width: 100%;
+  /*background: #13ec49;*/
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.selectbet li{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-bet{
+  position: relative;
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  background-color: rgba(219,87,5,1);
+  /*display: block;*/
+  /*padding: 5px 5px;*/
+  /*-webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;*/
+  -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 25px rgba(0,0,0,.7);
+  -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 25px rgba(0,0,0,.7);
+  box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 25px rgba(0,0,0,.7);
+  margin: 0px auto;
+  /*width: auto;*/
+  text-align: center;
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+.btn-bet:active
+{
+  -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 3px;
+}
+.btn-circle{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  /*color: #02058a;*/
+  background-color: #fa9805;
+  border-radius: 50% 50%;
+  /*-webkit-border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;*/
+  /*border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;*/
+}
+.btn-start{
+  color: #02058a;
+  background-color: #fe2701;
+}
+/*发光按钮1*/
+.btn-light {
+  /*text-decoration: none;*/
+  border: 2px solid #5122b0;
+  /*position: relative;*/
+  overflow: hidden;
+}
+.btn-light:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+  120deg,
+  transparent,
+  rgba(238,230,133, 0.9),
+  transparent
+  );
+  transition: all 450ms;
+}
+.btn-light:active {
+  /*box-shadow: 1px 1px 25px 10px rgba(238,230,133, 0.6);*/
+}
+.btn-light:active:before {
+  left: 100%;
+}
+
+/*顶部内发光文本框*/
+.text-light{
+  transition: border linear .2s,box-shadow linear .5s;
+  -moz-transition: border linear .2s,-moz-box-shadow linear .5s;
+  -webkit-transition: border linear .2s,-webkit-box-shadow linear .5s;
+  outline: none;
+  border-color: rgba(93,149,242,.75);
+  box-shadow: 0 0 8px rgba(93,149,242,.105);
+  -moz-box-shadow: 0 0 8px rgba(93,149,242,.5);
+  -webkit-box-shadow: 0 0 8px rgba(93,149,242,3);
+}
+/*发光动画css*/
+.xsign{
+  --interval: 1000ms;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  /*animation: flicker steps(100) var(--interval) 1000ms infinite;*/
+  animation: flicker var(--interval) ease infinite;
+}
+.xsign.style1{
+	color: yellow;
+  --color1: goldenrod;
+  --color2: orangered;
+  --color3: mediumblue;
+  --color4: purple;
+}
+.xsign.style2{
+	color: lightpink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+}
+.xsign.style3{
+	color: lightyellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: mediumblue;
+}
+.xsign.style4{
+	color: lightyellow;
+  --color1: gold;
+  --color2: firebrick;
+  --color3: pink;
+  --color4: red;
+}
+.xsign.style5{
+	color: azure;
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+}
+.xsign.style6{
+	color: tomato;
+  --color1: white;
+  --color2: firebrick;
+  --color3: maroon;
+  --color4: darkred;
+}
+.xsign.style7{
+	color: lightyellow;
+  --color1: yellow;
+  --color2: orange;
+  --color3: brown;
+  --color4: purple;
+}
+.xsign.style8{
+	color: yellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: darkgreen;
+}
+.xsign.style9{
+	color: lightyellow;
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  --color4: darkred;
+}
+
+@keyframes flicker {
+  50% {
+    /*color: white;*/
+    filter: saturate(200%) hue-rotate(20deg);
+  }
+}

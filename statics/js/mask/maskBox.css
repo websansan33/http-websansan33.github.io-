@@ -1,0 +1,466 @@
+.dBox
+{
+	/*消息对话框最外全局边界*/
+	background-color: #FFFFFF;
+	display: none;
+	border: 1px solid #AAAAAA; /*fix*/
+	text-align: center; /*fix*/
+	z-index: 999;
+	width: 330px;
+	height: auto;
+	min-height: 168px;
+	/*_height: 200px;IE5.5*/
+	overflow: hidden;
+	/*line-height: 168px;*/
+	left: 50%;
+	top: 50%;
+	margin-left: -190px!important;
+	/*FF IE7 该值为本身宽的一半 */
+	margin-top: -100px!important;
+	/*FF IE7 该值为本身高的一半*/
+	margin-top: 0px;
+	position: absolute;
+	/*position: fixed!important;*/
+	/* FF IE7*/
+	/*IE6
+	_top: expression(eval(document.compatMode &&
+	document.compatMode=='CSS1Compat') ?
+	documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :
+	document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);
+	*/
+	/*IE6*/
+	/*IE5 IE5.5*/
+}
+
+#pageMask
+{
+	padding: 0px;
+	background-color: #000000;
+	display: none;
+	width: 96%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	/*FF IE7*/
+	filter: alpha(opacity=60);
+	/*IE*/
+	opacity: 0.6;
+	/*FF*/
+	z-index: 998;
+	position: fixed!important;
+	/*FF IE7*/
+	position: absolute;
+	/*IE6*/
+}
+
+#msgIframe
+{
+	position: absolute;
+	visibility: inherit;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.maskSelect
+{
+	background-color: #BBBBBB;
+	color: #999999;
+}
+/*改变SELELCT样式*/
+
+/************小窗口登录样式 Begin**********/
+#loginPanel
+{
+}
+
+#loginPanel li.title
+{
+	text-indent: 12px;
+	/*background: url(../../Css/Img/Bg01.png) 0px -26px repeat-x;*/
+	background-color: #d92415;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	cursor: move;
+}
+
+#loginPanel ul
+{
+	margin: 1px;
+	padding: 0px;
+}
+
+#loginPanel ul li
+{
+	margin-bottom: 5px;
+	overflow: hidden;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+}
+
+#loginPanel ul li label
+{
+	width: 90px;
+	color: #333;
+	text-align: right;
+	display: block;
+	float: left;
+}
+
+#loginPanel ul li span
+{
+	padding: 0 0 1px 30px;
+	color: #999999;
+}
+
+#loginButton
+{
+	background: url(../../Css/Img/Bg01.png) -118px -529px;
+	width: 82px;
+	height: 30px;
+	margin: 0px 25px;
+	border: none;
+}
+
+#msgLoginSubmit
+{
+	text-align: left;
+	padding: 0px 10px 0px 0px;
+	height: 30px;
+	line-height: 30px;
+}
+
+#msgLoginSubmit input
+{
+	margin-right: 20px;
+}
+
+#msgLoginSubmit span
+{
+	padding-left: 10px;
+}
+
+#msgLoginTip
+{
+	background-color: #AAAAAA;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 28px;
+	line-height: 24px;
+	text-align: left;
+	text-indent: 10px;
+}
+
+#msgLoginResult
+{
+	color: #FF6600;
+	text-align: right;
+	font-weight: normal;
+}
+
+#loginPanel #closeLoginPanel
+{
+	/*background: url(../../Css/Img/Bg01.png) -145px -507px;*/
+	background:url("../../css/Img/fix/iDialogClose.png") no-repeat scroll 0 0;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	float: right;
+	padding: 0px;
+	margin: 6px 4px;
+	cursor: pointer;
+}
+/************小窗口登录样式 End**********/
+
+/************dvMsgBox小窗口 Begin************/
+#msgAlertTitle
+{
+	height: 29px;
+	line-height: 29px;
+	overflow: hidden;
+	color: #000000;
+	text-align: left;
+	text-indent: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #ffe699;
+
+}
+
+#msgAlertContent
+{
+	/*height: 62px;*/
+	/*_height: 92px; IE5.5*/
+	min-height: 75px!important;
+	height: auto;
+	line-height: 150%;
+	padding: 15px 10px 0px 15px;
+	text-align: left;
+	font-size: 14px;
+	overflow: hidden;
+	padding: 5px 5px 5px 5px;
+}
+/*对话框文字前面的图标*/
+#msgAlertIcon
+{
+	/*padding: 10px 16px;*/
+	margin-right: 24px;
+}
+
+#msgAlertButton
+{
+	/*height: 42px;*/
+	/*_height: 50px; IE5.5*/
+	line-height: 28px;
+	padding: 5px 15px 5px 5px;
+	overflow: hidden;
+	background: #f6f9fc;
+	border-top: 1px #ad836b solid;
+	text-align: left;
+}
+
+#msgAlertButton input
+{
+	padding: 4px 8px;
+	margin-left: 10px;
+}
+
+#msgAlertButton label
+{
+	color: #666666;
+}
+
+#msgChkFunc
+{
+	padding: 0px;
+}
+/************dvMsgBox小窗口 End************/
+
+
+#dvMsgBox
+{
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	min-width: 500px;
+	overflow: hidden;
+	z-index: 999;
+	background-color: #FFFFFF;
+	border: 1px solid #AAAAAA; /*fix*/
+	min-height: 120px;
+	/*background: url("../../Css/Img/top-bottom.png") repeat-x scroll 0% 0% transparent;*/
+}
+#dvMsgBox  .bt
+{
+	display: block;
+	margin: 5px auto;
+	width: 75px;
+	height: 36px;
+	background: url("/css/img/fix/sitebtns.jpg") no-repeat scroll 0px -36px;
+	color: #FFF;
+	text-align: center;
+	font: 16px/34px "Microsoft YaHei";
+	cursor: pointer;
+}
+
+
+#dvMsgBox  .btn
+{
+	float: left;
+	width: 75px;
+	height: 36px;
+	background: url("/css/img/fix/sitebtns.jpg") no-repeat scroll 0px -36px;
+	color: #FFF;
+	text-align: center;
+	font: 16px/34px "Microsoft YaHei";
+	cursor: pointer;
+}
+
+#dvMsgBox  .btno
+{
+	float: right;
+	width: 75px;
+	height: 36px;
+	background: url("/css/img/fix/sitebtns.jpg") no-repeat scroll -80px -36px; transparent;
+	color: #444;
+	text-align: center;
+	font: 16px/34px "Microsoft YaHei";
+	cursor: pointer;
+}
+
+#dvMsgBox #dvMsgBottom
+{
+	margin: 10px auto;
+	width: 220px;
+}
+
+#dvMsgBox #dvMsgBottom  #dvMsgBtns
+{
+	height: 40px;
+}
+
+#dvMsgBox #close
+{
+	/*background: url(../../Css/Img/Bg01.png) -145px -507px;*/
+	background:url("../../css/Img/fix/iDialogClose.png") no-repeat scroll 0 0;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	float: right;
+	padding: 0px;
+	margin: 6px 4px;
+	cursor: pointer;
+}
+
+
+#dvMsgBox #title
+{
+	height: 25px;
+	text-indent: 12px;
+	/*background: url("../../Css/Img/Bg01.png") repeat-x scroll 0px -26px transparent;*/
+	background-color: #d92415;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 5px;
+	cursor: move;
+}
+#dvMsgBox #close
+{
+	/*background: url(../../Css/Img/Bg01.png) -145px -507px;*/
+	background:url("../../css/Img/fix/iDialogClose.png") no-repeat scroll 0 0;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	float: right;
+	padding: 0px;
+	margin: 1px 4px;
+}
+#dvMsgBox #dvMsgTitle
+{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: Tahoma,Geneva,"Microsoft Yahei","微软雅黑","宋体";
+	text-decoration: none;
+}
+
+#dvMsgBox p.pzong
+{
+	overflow: hidden;
+	margin: 5px;
+	padding-top: 10px;
+	height: auto;
+	color: #444;
+	text-align: center; /*fix*/
+	font-size: 14px;
+	line-height: 25px;
+
+}
+#dvMsgBox div.tiptxts
+{
+	width: 50%;
+	height: auto;
+	overflow: hidden; /*滚动条*/
+	margin: auto;
+	font-size: 14px;
+	line-height: 25px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	/*text-align: left;
+	position: absolute;
+	padding-left: 30%;
+	font-size: 14px;
+	line-height: 25px;
+	color:#2e1ae6;
+	margin:0 auto;*/
+}
+#dvMsgBox  .pzong b.wait
+{
+	display: inline-block;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	background: url("../../images/ball/Wait.gif") repeat scroll 0% 0% transparent;
+	vertical-align: middle;
+}
+
+#dvMsgBox  .pzong b.error
+{
+	display: inline-block;
+	margin-right: 10px;
+	width: 44px;
+	height: 40px;
+	background: url("../../images/ball/gttb.jpg") repeat scroll 0% 0% transparent;
+	vertical-align: middle;
+}
+
+#dvMsgBox  .pzong b.suc
+{
+	display: inline-block;
+	margin-right: 10px;
+	width: 48px;
+	height: 48px;
+	background: url("../../images/ball/succeed.png") repeat scroll 0% 0% transparent;
+	vertical-align: middle;
+}
+
+#dvMsgBox  .pzong b.warning
+{
+	display: inline-block;
+	margin-right: 10px;
+	width: 48px;
+	height: 47px;
+	background: url("../../images/ball/error.png") repeat scroll 0% 0% transparent;
+	vertical-align: middle;
+}
+
+#dvMsgBox  .pzong b.conf
+{
+	display: inline-block;
+	margin-right: 10px;
+	width: 47px;
+	height: 47px;
+	background: url("../../images/ball/question.png") repeat scroll 0% 0% transparent;
+	vertical-align: middle;
+}
+
+#dvMsgBox .pro
+{
+	margin-top: 25px;
+	margin-left: 8px;
+	padding-left: -5px;
+	width: 96%;
+	border: solid 1px #cfa365;
+	height: 23px;
+	background: #ffffff;
+	line-height: 23px;
+	overflow: hidden;
+}
+#dvMsgBox .pro .bg
+{
+	width: 2%;
+	height: 100%;
+	background: #fdeec8;
+}
+
+#ShowBolightBox
+{
+	display: none;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	background-color: #000000;
+	z-index: 100;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}

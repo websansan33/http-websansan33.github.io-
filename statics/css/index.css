@@ -1,0 +1,908 @@
+/*合买列表保底提示*/
+em {font-style:normal;}
+.bao em {background: none repeat scroll 0 0 #ff3d00 ;border-radius: 2px; color: #fff;padding: 2px;}
+
+#mainTop {
+	margin-top: 0px;
+}
+#mainCenter, #mainBanner, #mainFoot {
+	margin-top: 10px;
+	/*margin-bottom: -5px;*/
+}
+#top {
+	height: 100px;
+	overflow: hidden;
+}
+#topLogo {
+	float: left;
+	width: 220px;
+	height: 65px;
+	background: url(img/Logo.png) no-repeat 5px 5px;
+}
+/*首页左侧的彩票列表*/
+#lottMenu {
+	width: 235px;
+	height: 390px;
+	overflow: hidden;
+	border:#aa0913 2px solid;
+	float: left;
+}
+
+/*
+.Maindex {
+	padding-top: 27px;
+}
+#lottMenu dl {
+	float: none;
+	clear: both;
+	display: block;
+	width: 226px;
+	height: auto;
+	overflow: hidden;
+	padding: 4px 0px;
+	margin: 0px 6px;
+}
+#lottMenu dl dt {
+	width: 64px;
+	float: left;
+	color: #999;
+	line-height: 20px;
+}
+#lottMenu dl i {
+	display: inline-block;
+	float: left;
+	padding: 0px;
+	width: 27px;
+	height: 27px;
+	font-size: 1px;
+	margin: 0px 5px;
+	background: url("img/cp_ico.png") no-repeat scroll 0px 0px transparent;
+	;
+}
+#lottMenu #lottjc i {
+	background-position: 0px 0px;
+}
+#lottMenu #lottbd i {
+	background-position: 0px -81px;
+}
+#lottMenu #lottlq i {
+	background-position: 0px -27px;
+}
+#lottMenu #lottZc i {
+	background-position: 0px -54px;
+}
+#lottMenu #lottGp i {
+	background-position: 0px -108px;
+}
+#lottMenu #lotttc i {
+	background-position: 0px -135px;
+}
+#lottMenu #lottfc i {
+	background-position: 0px -162px;
+}
+#lottMenu #lottMore i {
+	background-position: 0px -185px;
+}
+#lottMenu dd {
+	float: left;
+	width: 160px;
+	line-height: 20px;
+}
+#lottMenu dd a {
+	display: inline-block;
+	margin: 0px 5px;
+	color: #8F1E00
+}
+*/
+#mroeArrow {
+	float: right;
+	width: 20px;
+	height: 8px;
+	margin-top: 12px;
+	padding: 0px;
+	background: url(img/Bg01.png) no-repeat -189px -130px;
+}
+#lottMoreBox:hover #mroeArrow {
+	margin-top: 8px;
+	background: url(img/Bg01.png) no-repeat -189px -122px;
+}
+#MorePanel {
+	border-top: 0px solid #fff;
+	/*
+	border-bottom: 1px solid #E6C9A0;
+	border-left: 1px solid #E6C9A0;
+	border-right: 1px solid #E6C9A0;
+	*/
+	width: 182px;
+	overflow: hidden;
+	float: left;
+	position: absolute;
+	top: 447px;
+	margin-left: -7px;
+	padding-left: 56px;
+	padding-bottom: 5px;
+	background: none repeat scroll 0% 0% #FFF;
+}
+#MorePanel li {
+	width: 36%;
+	height: 14px;
+	padding: 6px;
+	text-indent: 5px;
+	white-space: nowrap;
+	float: left;
+}
+#MorePanel li a {
+	display: inline-block;
+	margin: 0px 2px;
+	color: #8F1E00;
+}
+#indexPic {
+	float: left;
+	margin: 0px 10px;
+}
+#indexPicBox {
+	width: 468px;
+	height: 189px;
+	border: 1px solid #dadada;
+}
+/*中间简要开奖信息面板*/
+#indexBuyLott {
+	width: 462px;
+	border: 1px solid #dadada;
+	background-color: #f9f9f9;
+	height: 130px;
+	overflow: hidden;
+	margin-top: 10px;
+	padding: 10px 0px 0px 6px;
+}
+#indexBuyLott #todayOpen {
+	float: left;
+	width: 69px;
+	color: #ff0600;
+	font-size: 15px;
+	font-weight: bold;
+	height: 18px;
+	margin-right: 20px;
+}
+#indexBuyLott #todayLott {
+	float: left;
+	list-style: none;
+}
+#indexBuyLott #todayLott li {
+	float: left;
+	width: 55px;
+	height: 25px;
+	line-height: 22px;
+	margin-right: 5px;
+	background: url(img/Bg01.png) no-repeat -143px -260px;
+	text-align: center;
+	cursor: pointer;
+}
+#indexBuyLott #todayLott li.sel {
+	background: url(img/Bg01.png) no-repeat -83px -260px;
+	color: #FFF;
+	text-align: center;
+}
+.lottCon {
+	float: none;
+	clear: both;
+	padding-top: 5px;
+	height: 65px;
+	overflow: hidden;
+}
+.logo {
+	float: left;
+	background-image: url(img/LottLogo/IndexLottlogo.png);
+	background-repeat: no-repeat;
+	margin: 0px 10px 0px 5px;
+	width: 80px;
+	height: 62px;
+}
+.l_ssq {
+	background-position: 0px -693px;
+}
+.l_f3d {
+	background-position: 0px -567px;
+}
+.l_syy {
+	background-position: 0px -126px; /*11选5*/
+}
+.l_pl5 {
+	background-position: 0px -252px;
+}
+.l_pl3 {
+	background-position: 0px -315px;
+}
+.l_t22 {
+	background-position: 0px -378px;
+}
+.l_ssc {
+	background-position: 0px -63px;
+}
+.l_7xc {
+	background-position: 0px -441px;
+}
+.l_7lc {
+	background-position: 0px -504px;
+}
+.l_dlt {
+	background-position: 0px -630px;
+}
+.l_zc {
+	background-position: 0px -189px;
+}
+.l_pk10 {
+	background-position: 0px -1012px;
+}
+.l_11y {
+	background-position: 0px -1139px;
+}
+.l_k3j {
+	background-position: 0px -1076px;
+}
+.l_xlc {
+	background-position: 0px -1205px;
+}
+/*首页中间热销彩种*/
+.lottInfo {
+	float: left;
+	padding: 8px 0px;
+	width: 175px;
+}
+.lottInfo div {
+	height: 25px;
+	line-height: 25px;
+}
+.lottInfo span {
+	color: #999;
+	margin-left: 8px;
+}
+.lottBuy {
+	float: right;
+	width: 180px;
+}
+.lottBuy div {
+	height: 34px;
+	line-height: 34px;
+}
+.indexTimer {
+	font-size: 14px;
+	color: #000;
+	margin-left: 8px;
+}
+.buttLink a {
+	display: inline-block;
+	background: url(img/Bg01.png) no-repeat 0px -292px;
+	margin-right: 10px;
+	width: 70px;
+	height: 22px;
+	line-height: 22px;
+	color: #da4901;
+	text-align: center;
+}
+#indexNews {
+	float: right;
+	width: 270px;
+	text-align: center;
+}
+#processShow {
+	padding-left: 10px;
+	width: 258px;
+	height: 40px;
+	overflow: hidden;
+}
+#processShow a {
+	width: 40px;
+	height: 36px;
+	padding-top: 4px;
+	display: block;
+	float: left;
+	line-height: 16px;
+	text-align: center;
+	background: url(img/Bg01.png) no-repeat -112px -175px;
+	color: #be5619;
+}
+#processShow i {
+	width: 30px;
+	height: 40px;
+	display: block;
+	float: left;
+	background: url(img/Bg01.png) no-repeat -152px -174px;
+}
+/*首页网站公告*/
+#newsDiv {
+	margin-top: 0px;
+	float: none;
+	clear: both;
+	height: 188px;
+}
+/*最新中奖*/
+#bbsDiv {
+	margin-top: 10px;
+	height: 140px;
+	float: none;
+	clear: both;
+}
+#newsDiv.winDiv2 .winTitle {
+	padding-left: 0px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #E5E5E5;
+}
+#newsDiv.winDiv2 .winTitle div {
+	float: left;
+	padding: 0px 15px;
+	font-size: 14px;
+	border-right: 1px solid #E5E5E5;
+	cursor: default;
+	height: 31px;
+	color: #369;
+}
+/* 首页网站公告和购彩帮助切换tab */
+#newsDiv.winDiv2 div.last {
+	border-right: 1px solid #F4F4F4;
+}
+#newsDiv.winDiv2 div.sel {
+	background-color: #FFF;
+	border-right: 1px solid #E5E5E5;
+	color: #333;
+}
+#newsDiv.winDiv2 .winMain {
+	height: 130px;
+	overflow: hidden;
+	text-align: center;
+	padding: 7px 8px;
+}
+
+#newsDiv.winDiv2 .winMain li,a {
+	height: 25px;
+	line-height: 20px; /*也影响彩种菜单*/
+	overflow: hidden;
+}
+/*首页网站公告表格*/
+#indexNewsTab {
+	color: #999;
+	border: 0px solid red;
+	width: 100%;
+}
+#indexNewsTab td {
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	text-indent: 10px;
+	background: url(img/Bg01.png) -192px -646px no-repeat;
+}
+#bbsDiv.winDiv2 .winTitle {
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #E5E5E5;
+}
+#bbsDiv.winDiv2 .winTitle div {
+	font-size: 14px;
+}
+#bbsDiv.winDiv2 .winMain {
+	height: 75px;
+	overflow: hidden;
+	text-align: left;
+	padding: 7px 8px;
+}
+#bbsDiv.winDiv2 .winMain ul li {
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+}
+#winCon1 a:hover {
+	color: red;
+	text-decoration: underline;
+}
+.indexHelpUl {
+	margin-bottom: 10px;
+	height: auto;
+	overflow: hidden;
+}
+.indexHelpUl li {
+	display: inline-block;
+	width: 125px;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	text-align: left;
+	text-indent: 10px;
+	background: url(img/Bg01.png) -192px -646px no-repeat;
+}
+.indexHelpUl li a:hover {
+	text-decoration: underline;
+	color: red;
+}
+#openInfo {
+	width: 238px;
+	float: left;
+}
+#openInfo.winDiv2 .winMain {
+	height: 347px;
+	padding: 0px;
+	overflow: hidden;
+}
+#openInfo.winDiv2 .winTitle {
+	color: #fffd95;
+	padding-right: 0px;
+	background: url(../images/repeatx.png) repeat-x 0 -284px;
+	height: 35px;
+	line-height: 35px;
+}
+#openInfo.winDiv2 .winTitle div {
+	float: right;
+	padding: 0px 10px;
+	/*border-left: 1px solid #E5E5E5;*/
+	cursor: default;
+	height: 34px;
+	color: #fff8bf;
+}
+#openInfo.winDiv2 div.first {
+	/*border-left: 1px solid #E5E5E5;*/
+}
+#openInfo.winDiv2 div.sel {
+	background-color: #FFF;
+	border-left: 1px solid #E5E5E5;
+	color: #333;
+}
+#openCon0, #openCon1 {
+	margin-top: auto;
+}
+/*定义最新开奖号码的文字色彩*/
+.indexOpenInfo h1 {
+	font-size: 13px;
+	margin: 3px 0px;
+	color: #ffffdf;
+}
+
+.indexOpenInfo h1 b {
+	color: #ffffff;
+	font-size: 13px;
+	margin-left: 3px;
+}
+.indexOpenInfo span {
+	color: #d83701;
+}
+.indexOpenInfo h2, .indexOpenInfo h3 {
+	font-size: 13px;
+	font-weight: normal;
+	margin: 1px 0px;
+}
+.indexOpenInfo h3 {
+	float: right;
+	margin-top: 1px;
+}
+.indexOpenInfo h3 a {
+	color: #f4920b;
+	background: url(../images/indexIcon_btn.png) no-repeat 0 -184px;
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	height: 23px;
+	line-height: 23px;
+	width: 71px
+}
+.indexOpenInfo {
+	margin-top: 0px;
+}
+.indexOpenInfo dt {
+	height: 25px;
+	line-height: 25px;
+	background-color: #F9F9F9;
+	border-top: 1px solid #DADADA;
+	padding-left: 12px;
+}
+.indexOpenInfo dd {
+	padding: 10px;
+}
+
+/*最新开奖各彩种小图标*/
+.indexOpenInfo dt b
+{
+	float: left;
+	display: inline-block;
+	width: 27px;
+	margin-right: 5px;
+	margin-top: 2px;
+	height: 27px;
+	background: url(../images/index_yh04.png) no-repeat;
+}
+.indexOpenInfo dt b.Ssc
+{
+	background-position: 6px -282px;
+}
+.indexOpenInfo dt b.JxSsc
+{
+	background-position: 6px -353px;
+}
+.indexOpenInfo dt b.TjSsc
+{
+	background-position: -101px -440px;
+}
+.indexOpenInfo dt b.XjSsc
+{
+	background-position: -101px -394px;
+}
+.indexOpenInfo dt b.HljSsc
+{
+	background-position: 6px -319px;
+}
+.indexOpenInfo dt b.Syxw
+{
+	background-position: -101px -353px;
+}
+.indexOpenInfo dt b.CqSyxw
+{
+	background-position: 6px -394px;
+}
+.indexOpenInfo dt b.GdSyxw
+{
+	background-position: 6px -440px;
+}
+.indexOpenInfo dt b.JsSyxw
+{
+	background-position: 6px -440px;
+}
+.indexOpenInfo dt b.JsSyxw
+{
+	background-position: -47px -280px;
+}
+.indexOpenInfo dt b.Syydj
+{
+	background-position: -101px -319px;
+}
+.indexOpenInfo dt b.Ssl
+{
+	background-position: 6px -251px;
+}
+.indexOpenInfo dt b.Ks
+{
+	background-position: -47px -247px;
+}
+.indexOpenInfo dt b.Sd
+{
+	background-position: -101px -251px;
+}
+.indexOpenInfo dt b.Pls
+{
+	background-position: -101px -282px;
+}
+
+
+#openInfoCtrl {
+	height: 27px;
+	border-top: 1px solid #E5E5E5
+}
+/*今日开奖底部的上下滚动开关*/
+#openInfoCtrl a {
+	width: 119px;
+	height: 27px;
+	line-height:27px;
+	text-align: center;
+	display: block;
+	float: left;
+	/*background-image: url(img/Bg01.png);
+	background-repeat: repeat-x;
+	background-position: 0 -1275px;*/
+	background-color:#F2F2F2;
+	border: 0px solid red;
+}
+#openInfoCtrl a:hover {
+	background-position: 0 -1308px
+}
+#openInfoCtrl a.bd {
+	border-right: 1px solid #E5E5E5;
+	font-weight: normal;
+	width: 118px;
+}
+#openInfoCtrl a i {
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	margin-top: 10px;
+}
+#openInfoCtrl a i.up {
+	margin-top:-1px;
+	border: solid transparent;content: ' ';height: 0;position: absolute;width: 0;
+	border-width: 9px;
+	border-bottom-color: #96281d;
+	/*background: url(img/Bg01.png) no-repeat -189px -125px;left: 100%;*/
+}
+#openInfoCtrl a i.down {
+	border: solid transparent;content: ' ';height: 0;position: absolute;width: 0;
+	border-width: 9px;
+	border-top-color: #96281d;
+	top:auto;
+	/*background: url(img/Bg01.png) no-repeat -189px -131px;*/
+}
+#betOn {
+	width: 268px;
+}
+#betOn.winDiv2 .winMain {
+	height: 205px;
+	padding: 8px;
+}
+#betNow li {
+	height: 95px;
+	border-bottom: 1px solid #CCC;
+	padding: 8px;
+}
+#betNow li.last {
+	border-bottom: none;
+}
+#betNow dl {
+	height: 80px;
+	padding-left: 80px;
+	background-image: url(img/LottLogo/LottLogoWhiteBg.png);
+	background-repeat: no-repeat;
+}
+#betNow dl.ssq {
+	background-position: -5px 0;
+}
+#betNow dl.dlt {
+	background-position: -5px -90px;
+}
+#betNow dl.ssc {
+	background-position: -5px -170px;
+}
+#betNow dl.syy {
+	background-position: -5px -260px;
+}
+#betNow dl dt {
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #0F3F94;
+}
+#betNow dl dd {
+	line-height: 160%;
+}
+#betNow li div {
+	font-weight: bold;
+	color: #0F3F94;
+	text-indent: 20px;
+}
+#betNow li div a:hover {
+	text-decoration: underline;
+	color: red;
+}
+#mainNews {
+	width: 468px;
+	float: left;
+	margin: 0px 10px;
+}
+#mainNews.winDiv2 .winMain {
+	height: 339px;
+	padding: 5px 10px;
+}
+#mainNews ul {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#mainNews ul li {
+	float: left;
+	text-align: left;
+	width: 220px;
+	height: 23px;
+	line-height: 23px;
+	margin-right: 2px;
+	overflow: hidden;
+}
+#mainNews ul li * {
+	font-size: 14px;
+}
+#mainNews ul li.redTitle {
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	height: 45px;
+	line-height: 45px;
+}
+#mainNews ul li.blackTitle {
+	height: 25px;
+	line-height: 25px;
+}
+#mainNews ul li.redTitle a {
+	color: red;
+	/*font-weight: bold;*/
+}
+#mainNews ul li.blackTitle a {
+	/*font-weight: bold;*/
+}
+#mainNews ul li.blackTitle label {
+	color: #666;
+	/*font-weight: bold;*/
+}
+#mainNews ul li a:hover {
+	color: red;
+	text-decoration: underline;
+}
+#mainNews ul li label {
+	color: #999;
+	margin-right: 8px;
+}
+#mainNews ul li.line1 {
+	width: 100%;
+	border-bottom: 1px solid #EEE;
+	height: 6px;
+	font-size: 1px;
+	;
+	margin: 5px 0px;
+}
+#mainNews ul li.line2 {
+	width: 100%;
+	border-bottom: 1px dashed #EEE;
+	height: 6px;
+	font-size: 1px;
+	margin: 5px 0px;
+}
+#mainFoot div.winDiv2 .winTitle {
+	height: 30px;
+	line-height: 30px;
+}
+/*首页-底部合买*/
+#indexHemai {
+	float: left;
+	width: 718px;
+}
+#indexHemai.winDiv2 {
+	border: 1px solid #C78B8B;
+}
+#indexHemai.winDiv2 .winTitle {
+	background-color: #C83C3F;
+	color: #FFF;
+	border: none;
+}
+#indexHemai.winDiv2 .winTitle * {
+	color: #FFF;
+}
+#indexHemai.winDiv2 .winMain {
+	background-color: #f8f8f8;
+	height: 484px;
+	padding: 0px;
+}
+.hmTab {
+	width: 100%;
+	text-align: center;
+}
+.hmTab th {
+	height: 35px;
+	border-bottom: 1px solid #E1E1E1;
+	text-align: center;
+	color: #505050;
+	font-weight: normal;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,254,159,1.00) 0%,rgba(255,213,91,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,254,159,1.00) 0%,rgba(255,213,91,1.00) 100%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#fffb9f',endColorStr='#fbda66',gradientType=0);
+}
+.hmTab td {
+	height: 35px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid #E1E1E1;
+	vertical-align: middle;
+	padding: 0px 5px;
+}
+.hmTab a s {
+	color: #FFF;
+}
+.hmTab tr {
+	background-color: #F4F4F4;
+}
+.hmTab tr:hover {
+	background-color: #FFF;
+	color: red;
+}
+.moreHemai {
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	padding-right: 12px;
+}
+/*更多合买文字色彩*/
+.moreHemai a {
+	color: #0F3F94
+}
+/*tab切换底背景*/
+#hemaiNav {
+	/*background: url(img/Bg01.png) repeat-x 0px -1338px;*/
+
+	height: 28px;
+	border-bottom: 1px solid #B17E69;
+	background-image: -webkit-linear-gradient(270deg,#fffffb 0%,#fff1b0 73.58%);
+	background-image: linear-gradient(180deg,#fffffb 0%,#fff1b0 73.58%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#fffffb',endColorStr='#fff1b0',gradientType=0); 
+}
+/*tab切换按钮*/
+#hemaiNav div {
+	float: left;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	color: #0F3F94;
+	border-right: 1px solid #B17E69;
+	text-align: center;
+	cursor: pointer;
+}
+#hemaiNav div.seled {
+	background: #FFF;
+	height: 29px;
+}
+#hemaiNav a {
+	float: right;
+	margin: 3px 10px;
+}
+#mainFootRight {
+	float: right;
+}
+#indexBang {
+	width: 268px;
+}
+#indexBang.winDiv2 .winMain {
+	height: 377px
+}
+#rightadvimg{
+	width: 268px;
+	height: 105px;
+	margin: 0px;
+}
+#hemaiHelp {
+	width: 268px;
+	height: 150px;
+	margin-top: 10px;
+}
+#hemaiHelp.winDiv2 .winMain {
+	height: 100px;
+	padding: 10px 5px;
+}
+#hemaiHelp .indexHelpUl li {
+	height: 25px;
+	line-height: 25px;
+}
+#bangNav div {
+	width: 66px;
+	float: left;
+}
+#bangNav #lastTag {
+	width: 67px;
+}
+#mainBanner img {
+	border: none;
+}
+.r_blue_btn, .r_red_btn {
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 2px;
+	font-size: 12px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	border-radius: 100px;
+	-moz-border-radius: 100px;/*-webkit-border-radius: 100px;*/
+}
+.r_blue_btn {
+	background-position: -85px -220px;
+}
+
+.kj_ball i {
+	background: url("img/n-skin.png") no-repeat scroll 0% 0% transparent;
+	background-position: -103px 0px;
+	width: 14px;
+	height: 21px;
+	line-height: 20px;
+	display: inline-block;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: "SimSun";
+	margin-right: 1px;
+	font-style: normal;
+}
+
+

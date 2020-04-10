@@ -1,0 +1,144 @@
+/*.introjs-helperNumberLayer {
+font-family: tahoma, Arial, verdana, sans-serif;
+font-size: 14px;
+text-shadow: none;
+width: 22px;
+height: 22px;
+line-height: 22px;
+border: 2px solid #ecf0f1;
+border-radius: 50%;
+background: #e74c3c;
+}*/
+/*.introjs-overlay {
+position: absolute;
+z-index: 999999;
+background:#fff;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}*/
+/*.introjs-fixParent {
+z-index: auto !important;
+opacity: 1.0 !important;
+}
+.introjs-showElement,
+tr.introjs-showElement > td,
+tr.introjs-showElement > th {
+z-index: 9999999 !important;
+}
+.introjs-relativePosition,
+tr.introjs-showElement > td,
+tr.introjs-showElement > th {
+position: relative;
+}*/
+/*.introjs-bullets {
+text-align: center;
+display:none;
+}
+.introjs-bullets ul {
+clear: both;
+margin: 15px auto 0;
+padding: 0;
+display: inline-block;
+}
+.introjs-bullets ul li {
+list-style: none;
+float: left;
+margin: 0 2px;
+}
+.introjs-bullets ul li a {
+display: block;
+width: 8px;
+height: 8px;
+background: rgba(255,255,255,0.1);
+border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+text-decoration: none;
+}
+.introjs-bullets ul li a:hover {
+background: rgba(255,255,255,0.2);
+}
+.introjs-bullets ul li a.active {
+background: rgba(255,255,255,0.2);
+}*/
+.introjsFloatingElement {
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 50%;
+  top: 50%;
+}
+
+/*.introjs-skipbutton {
+  border-radius: 5px;
+  color: #01a9a5;
+}*/
+
+.introjs-helperLayer {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  
+}
+
+.introjs-tooltip {
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+.introjs-tooltip span{
+  color: #22cc95;
+}
+
+.introjs-button,
+.introjs-button:hover, .introjs-button:focus, .introjs-button:active,
+.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+  outline: none;
+  background-image: none;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: none;
+  border-shadow: none;
+  text-shadow: none;
+}
+
+.introjs-button:hover, .introjs-button:focus, .introjs-button:active {
+  border: 1px solid #fff;
+}
+.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+  color: #ccc;
+  border: 1px solid transparent;
+}
+
+.introjs-arrow {
+  border: 1px solid #fff;
+}
+.introjs-arrow.top, .introjs-arrow.top-middle, .introjs-arrow.top-right {
+  border-color: transparent transparent rgba(000, 0, 0, 0.5);
+  top: -20px;
+  left: 20px;
+}
+.introjs-arrow.bottom, .introjs-arrow.bottom-middle, .introjs-arrow.bottom-right {
+  border-color: rgba(000, 0, 0, 0.5) transparent transparent;
+  bottom: -20px;
+  left: 20px;
+}
+.introjs-arrow.left, .introjs-arrow.right {
+  top: 20px;
+}
+.introjs-arrow.left-bottom, .introjs-arrow.right-bottom {
+  bottom: 20px;
+}
+
+.introjs-arrow.left, .introjs-arrow.left-bottom {
+  left: -20px;
+  border-color: transparent rgba(000, 0, 0, 0.5) transparent transparent;
+}
+.introjs-arrow.right, .introjs-arrow.right-bottom {
+  right: -20px;
+  border-color: transparent transparent transparent rgba(000, 0, 0, 0.5);
+}

@@ -1,0 +1,131 @@
+.modal.modal-lottery
+{
+  box-shadow: 0 0 0 100px #fff
+}
+.modal.modal-lottery .modal-dialog
+{
+  /*margin: 0;
+  width: 100%;
+  height: 100%*/
+}
+.modal.modal-lottery .modal-dialog .modal-content
+{
+  border: none;
+  /*border-radius: 0;*/
+  box-shadow: none;
+  background-color: transparent;
+  /*border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;*/
+}
+.modal.modal-lottery .modal-dialog .modal-content .modal-header
+{
+  height: 50px;
+  line-height: 50px;
+  border-color: #e7e7e7;
+  text-align: center;
+  background-color: #f90;
+  /* 控制条纹的大小 */
+  -webkit-background-size: 50px 50px;
+  -moz-background-size: 50px 50px;
+  background-size: 50px 50px;
+  /* 45度条纹的大小 */
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+  color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+  color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+  color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+  to(transparent));
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+  transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+  transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+  transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+  transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+  transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+  transparent 75%, transparent);
+  /*background-image: linear-gradient(0deg,  #ffad33 0， #ffad33 50%, #f90 50%, #f90 100%);*/
+}
+.modal.modal-lottery .modal-dialog .modal-content .modal-header .close
+{
+  position: relative;
+  z-index: 99;
+}
+.modal.modal-lottery .modal-dialog .modal-content .modal-header .modal-title
+{
+  position: relative;
+  top: 0;
+}
+.modal.modal-lottery .modal-dialog .modal-content .modal-body
+{
+  /*overflow: scroll;*/
+  background-color: #f4f2ca;
+  padding: 7px
+}
+
+.modal.modal-lottery .modal-dialog .modal-content .modal-footer
+{
+  /*display: none*/
+  padding: 0;
+  border-top: 0;
+  text-align: center;
+  background-color: #f4f2ca;
+}
+/*顶部文字*/
+.text-tips{
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 7px;
+}
+.text-tips i{
+  color: #ad1d9e;
+}
+
+@media (min-width:992px)
+{
+
+  .modal.modal-lottery .modal-dialog .modal-content
+  {
+    border: none;
+    /*border-radius: 0;*/
+    /*box-shadow: none;*/
+  }
+  .modal.modal-lottery .modal-dialog .modal-content .modal-header
+  {
+    height: 50px;
+    line-height: 50px;
+    border-color: #e7e7e7;
+    text-align: center;
+    background-color: #f90;
+    /* 控制条纹的大小 */
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    /* 条纹的生成 */
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+    background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -o-linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    /*background-image: linear-gradient(0deg,  #ffad33 0， #ffad33 50%, #f90 50%, #f90 100%);*/
+  }
+  .modal.modal-lottery .modal-dialog .modal-content .modal-header .close
+  {
+    position: relative;
+    z-index: 99;
+  }
+  .modal.modal-lottery .modal-dialog .modal-content .modal-header .modal-title
+  {
+    position: relative;
+    top: 0;
+  }
+  .modal.modal-lottery .modal-dialog .modal-content .modal-body
+  {
+    /*overflow: scroll;*/
+    padding: 7px
+  }
+  .modal.modal-lottery .modal-dialog .modal-content .modal-footer
+  {
+    /*display: none*/
+    text-align: center;
+  }
+}

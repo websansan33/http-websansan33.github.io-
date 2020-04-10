@@ -1,0 +1,329 @@
+html,body{ 
+	height: 100%;}
+html
+{
+	overflow-y: scroll;
+}
+body
+{
+	/*background: #160c03;*/
+	/*height: 100%;*/
+	/*position: absolute;*/
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(#4ab784));
+	/*background: -webkit-linear-gradient(left, #80c1e7, #4ab784);  */
+	background: -moz-linear-gradient(left, #000, #4ab784);
+	background: -o-linear-gradient(left, #000, #4ab784);
+	background: -ms-linear-gradient(left, #000, #4ab784);
+	/*background: linear-gradient(left, #000, #4ab784); */
+	background: -webkit-linear-gradient(180deg,#000 0%,#4ab784 100%);
+	background: linear-gradient(180deg,#000 0%,#4ab784 100%);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#000000',endColorStr='#4ab784',GradientType=0);
+}
+form
+{
+	margin: 0px;
+}
+a
+{
+	cursor: pointer;
+	cursor /*IE5.5*/:hand;
+	color: #333333;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #8a0b00;
+	text-decoration: underline;
+}
+ul
+{
+	list-style: none;
+}
+li
+{
+	list-style: none;
+}
+dl
+{
+	list-style: none;
+}
+.main
+{
+	width: 100%;
+	height: 360px;
+	text-align: center;
+}
+/*.mainbg
+{
+position: absolute;
+width: 100%;
+height: 360px;
+background: url('img/welcome.png') no-repeat;
+background-position: center center;
+}*/
+.headfont
+{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	font-size: 32px;
+	color: #18a01c;
+}
+.sitesel
+{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+.sitesel a
+{
+	color: #153e29;
+	font-size: 20px;
+	padding-right: 50px;
+}
+.sitesel a:hover
+{
+	color: #409b7d;
+	text-decoration: none;
+}
+.tips
+{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #a2ec5e;
+	font-size: 13px;
+	bottom: 10px;
+}
+.line1
+{
+
+}
+.line2
+{
+	border-top: solid 1px #fff;
+	border-bottom: solid 1px #5fefc0;
+
+	height: 110px;
+	background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+	filter: Alpha(opacity=60);
+	background: #fff;/*实现IE背景透明*/
+
+}
+.line2 li
+{
+	position: relative;/*实现IE文字不透明*/
+	opacity: 1.0;
+}
+
+/*地球仪转动*/
+
+.ball
+{
+	width: 500px;
+	height: 500px;
+	margin: 10px auto
+}
+.ball .ball-cube
+{
+	width: 500px;
+	height: 500px;
+	transform-style: preserve-3d;
+	transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg);
+	animation: ball 20s linear infinite
+}
+@keyframes 'ball'
+{
+	0%
+	{
+		-sand-transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg);
+	}
+	100%
+	{
+		-sand-transform: rotate(-20deg) rotateX(-20deg) rotateY(360deg);
+	}
+}
+
+/*@-webkit-keyframes 'ball'
+{
+	0%
+	{
+		-webkit-transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg);
+	}
+	100%
+	{
+		-webkit-transform: rotate(-20deg) rotateX(-20deg) rotateY(360deg);
+	}
+}
+
+@-moz-keyframes 'ball'
+{
+	0%
+	{
+		-moz-transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg);
+	}
+	100%
+	{
+		-moz-transform: rotate(-20deg) rotateX(-20deg) rotateY(360deg);
+	}
+}
+
+@-o-keyframes 'ball'
+{
+	0%
+	{
+		-o-transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg);
+	}
+	100%
+	{
+		-o-transform: rotate(-20deg) rotateX(-20deg) rotateY(360deg);
+	}
+}
+
+@-ms-keyframes 'ball'
+{
+	0%
+	{
+		-ms-transform: rotate(-20deg) rotateX(-20deg) rotateY(0deg);
+	}
+	100%
+	{
+		-ms-transform: rotate(-20deg) rotateX(-20deg) rotateY(360deg);
+	}
+}*/
+
+.ball .ball-cube div
+{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px
+}
+.ball .ball-cube .x1
+{
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	-sand-transform: rotateY(0deg);
+}
+.ball .ball-cube .x2
+{
+	-webkit-transform: rotateY(20deg);
+	-moz-transform: rotateY(20deg);
+	-ms-transform: rotateY(20deg);
+	-o-transform: rotateY(20deg);
+	-sand-transform: rotateY(20deg);
+}
+.ball .ball-cube .x3
+{
+	-webkit-transform: rotateY(40deg);
+	-moz-transform: rotateY(40deg);
+	-ms-transform: rotateY(40deg);
+	-o-transform: rotateY(40deg);
+	-sand-transform: rotateY(40deg);
+}
+.ball .ball-cube .x4
+{
+	-webkit-transform: rotateY(60deg);
+	-moz-transform: rotateY(60deg);
+	-ms-transform: rotateY(60deg);
+	-o-transform: rotateY(60deg);
+	-sand-transform: rotateY(60deg);
+}
+.ball .ball-cube .x5
+{
+	-webkit-transform: rotateY(80deg);
+	-moz-transform: rotateY(80deg);
+	-ms-transform: rotateY(80deg);
+	-o-transform: rotateY(80deg);
+	-sand-transform: rotateY(80deg);
+}
+.ball .ball-cube .x6
+{
+	-webkit-transform: rotateY(100deg);
+	-moz-transform: rotateY(100deg);
+	-ms-transform: rotateY(100deg);
+	-o-transform: rotateY(100deg);
+	-sand-transform: rotateY(100deg);
+}
+.ball .ball-cube .x7
+{
+	-webkit-transform: rotateY(120deg);
+	-moz-transform: rotateY(120deg);
+	-ms-transform: rotateY(120deg);
+	-o-transform: rotateY(120deg);
+	-sand-transform: rotateY(120deg);
+}
+.ball .ball-cube .x8
+{
+	-webkit-transform: rotateY(140deg);
+	-moz-transform: rotateY(140deg);
+	-ms-transform: rotateY(140deg);
+	-o-transform: rotateY(140deg);
+	-sand-transform: rotateY(140deg);
+}
+.ball .ball-cube .x9
+{
+	-webkit-transform: rotateY(160deg);
+	-moz-transform: rotateY(160deg);
+	-ms-transform: rotateY(160deg);
+	-o-transform: rotateY(160deg);
+	-sand-transform: rotateY(160deg);
+}
+.ball .ball-cube .y1
+{
+	-webkit-transform: rotateX(90deg) translateZ(200px) scale(0.6);
+	-moz-transform: rotateX(90deg) translateZ(200px) scale(0.6);
+	-ms-transform: rotateX(90deg) translateZ(200px) scale(0.6);
+	-o-transform: rotateX(90deg) translateZ(200px) scale(0.6);
+	-sand-transform: rotateX(90deg) translateZ(200px) scale(0.6);
+}
+.ball .ball-cube .y2
+{
+	-webkit-transform: rotateX(90deg) translateZ(150px) scale(0.7);
+	-moz-transform: rotateX(90deg) translateZ(150px) scale(0.7);
+	-ms-transform: rotateX(90deg) translateZ(150px) scale(0.7);
+	-o-transform: rotateX(90deg) translateZ(150px) scale(0.7);
+	-sand-transform: rotateX(90deg) translateZ(150px) scale(0.7);
+}
+.ball .ball-cube .y3
+{
+	transform: rotateX(90deg) translateZ(100px) scale(0.8);
+}
+.ball .ball-cube .y4
+{
+	transform: rotateX(90deg) translateZ(50px) scale(0.9);
+}
+.ball .ball-cube .y5
+{
+	transform: rotateX(90deg) translateZ(0px);
+}
+.ball .ball-cube .y6
+{
+	transform: rotateX(90deg) translateZ(-50px) scale(0.9);
+}
+.ball .ball-cube .y7
+{
+	transform: rotateX(90deg) translateZ(-100px) scale(0.8);
+}
+.ball .ball-cube .y8
+{
+	transform: rotateX(90deg) translateZ(-100px) scale(0.7);
+}
+.ball .ball-cube .y9
+{
+	transform: rotateX(90deg) translateZ(-150px) scale(0.6);
+}

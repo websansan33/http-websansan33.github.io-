@@ -1,0 +1,450 @@
+/*新闻首页顶部布局*/
+#mainTop
+{
+	height: 242px;
+	margin-top: 5px;
+	color: red;
+	font-size: 14px;
+	text-align: center;
+	line-height: 60px;
+}
+/*图片新闻*/
+#picNews
+{
+	width: 296px;
+	height: 240px;
+	border: 0px solid #F8C596;
+	float: left;
+}
+/*热点新闻*/
+#hotNews
+{
+	width: 440px;
+	height: 240px;
+	border: 1px solid #F8C596;
+	float: left;
+	margin-left: 10px;
+	/*background: url(img/repeat-x.png) repeat-x -0px -560px;
+	background-size:150px 200px;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.google.com/images/nav_logo4.png', sizingMethod='scale');*/
+}
+/*新闻首页右侧布局*/
+#bbsNews
+{
+	width: 242px;
+	float: right;
+}
+#hotNews li
+{
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	margin-left: 12px;
+}
+#hotNews li a
+{
+	font-size: 14px;
+	color: #89412c;
+}
+#hotNews li label
+{
+	font-size: 14px;
+	margin-right: 8px;
+}
+/*热点资讯标题头*/
+#hotNews li.tit
+{
+	height: 30px;
+	line-height: 30px;
+	color: #d72106;
+	font-weight: bold;
+	font-size: 15px;
+}
+#hotNews li.redTitle
+{
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+}
+#hotNews li.redTitle a
+{
+	color: red;
+	font-size: 15px;
+}
+#hotNews li.redTitle a font
+{
+	color: red;
+	font-size: 15px;
+}
+
+#mainMid
+{
+	margin-top: 10px;
+	float: none;
+	clear: both;
+}
+#mainNews
+{
+	width: 746px;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #F8C596;
+	float: left;
+}
+
+/*#siteNews .hd_a
+{
+	border-color: #D4D4D4;
+	background-color: #DDD;
+}
+#siteNews .hd_b
+{
+	border-color: #D4D4D4;
+	background-color: #FFF;
+}*/
+/*网站公告*/
+#siteNews .winTitle
+{
+	/*background: url(img/Bg01.png) repeat-x 0px -1007px;*/
+	background: url(img/repeat-x.png) repeat-x -0px -86px;
+	height:34px;
+	line-height: 34px;
+	border-color: #a64233;
+	color: #f3f3f3;
+	font-size: 15px;
+	text-align: left;
+	border-top: 1px solid #a64233;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+#siteNews .winMain
+{
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid #a64233;
+	padding: 2px 5px;
+}
+.newsTab td
+{
+	height: 22px;
+	line-height: 22px;
+}
+
+.newsTab td a
+{
+	height: 22px;
+	color: #8d5a16;
+	line-height: 22px;
+}
+
+/*
+#bbsNews .openTip
+{
+	height: 75px;
+	background: url(img/NewsOpenTip.gif) no-repeat;
+	padding-left: 48px;
+	padding-top: 15px;
+}
+#bbsNews .openTip a
+{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	overflow: hidden;
+	color: #0F3F94;
+	float: left;
+}
+#bbsNews .openTip a.z
+{
+	width: 52px;
+}
+#bbsNews .openTip a.r
+{
+	color: red;
+}
+*/
+#mainNews div
+{
+	height: 320px;
+	overflow: hidden;
+}
+#mainNews .newsTab
+{
+	float: left;
+	width: 332px!important;
+	width: 337px;
+	margin: 8px 20px!important;
+	margin-left: 10px;
+}
+#mainNews .newsTab th
+{
+	height: 28px;
+	line-height: 28px;
+	text-align: left;
+	font-size: 15px;
+	border-bottom: 1px solid #d73935;
+	color: #d73935
+}
+#mainNews .newsTab td
+{
+	height: 24px;
+	line-height: 24px;
+	background: url(img/Bg01.png) -192px -646px no-repeat;
+	text-indent: 10px;
+}
+#mainNews .newsTab td span
+{
+	color: #cfab87;
+}
+#mainNews a
+{
+	color: #625953;
+	font-size: 14px;
+}
+#mainNews a font
+{
+	font-size: 14px;
+}
+
+#mainHelp
+{
+	width: 242px;
+	height: 340px;
+	float: right;
+}
+/*#mainHelp .hd_a
+{
+	border-color: #D4D4D4;
+	background-color: #DDD;
+}
+#mainHelp .hd_b
+{
+	border-color: #D4D4D4;
+	background-color: #FFF;
+}*/
+#mainHelp .winTitle
+{
+	/*background: url(img/Bg01.png) repeat-x 0px -1007px;*/
+	background: url(img/repeat-x.png) repeat-x -0px -86px;
+	height:34px;
+	line-height: 34px;
+	border-color: #a64233;
+	color: #f3f3f3;
+	font-size: 15px;
+	text-align: left;
+	border-top: 1px solid #a64233;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+#mainHelp .winMain
+{
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #a64233;
+	padding: 2px 10px;
+}
+#helpList
+{
+}
+#helpList dt
+{
+	margin-top: 5px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 25px;
+	color: #a01b03;
+}
+#helpList dt.i1
+{
+	background-position: 0 -127px
+}
+#helpList dt.i2
+{
+	background-position: 0 -161px
+}
+#helpList dt.i3
+{
+	background-position: 0 -195px
+}
+#helpList dt.i4
+{
+	background-position: 0 -228px
+}
+#helpList dd
+{
+	padding: 0 0 8px 25px;
+	line-height: 22px;
+	border-bottom: 1px dashed #EEE;
+}
+#helpList dd a
+{
+	margin-right: 15px;
+	display: inline-block;
+	color: #8d5a16;
+}
+
+#newsBox
+{
+	margin: auto;
+	margin-top: 5px;
+}
+#newsContent
+{
+	width: 700px;
+	float: left;
+	background: #fffdf7;
+}
+#newsDetail
+{
+	border: 1px solid #fff0d2;
+	margin-top: 3px;
+	padding: 10px 30px;;
+}
+#newsTitle
+{
+	width: 100%;
+	min-height: 50px;
+	height: auto!important;
+	height: 50px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ffdd95;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#newsTitle h1
+{
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 150%;
+}
+#newsTitle div
+{
+	color: #999;
+	margin-top: 5px;
+}
+#newsTitle div span
+{
+	margin: 0 10px;
+}
+#newsMain
+{
+	color: #666;
+	font-size: 14px;
+	line-height: 200%;
+	width: 100%;
+	min-height: 300px;
+	height: auto!important;
+	height: 300px;
+}
+#newsMain *
+{
+	font-size: 14px;
+}
+#newsMain p
+{
+	margin: 22px 0;
+}
+#newsAdj
+{
+	height: 30px;
+	line-height: 30px;
+	background-color: #FFF;
+	padding: 5px;
+	margin-top: 20px;
+}
+#newsAdj *
+{
+	font-size: 14px;
+	color: #0F3F94
+}
+#moreNews.newsTab
+{
+	margin-top: 20px;
+}
+#moreNews.newsTab th
+{
+	text-align: left;
+	font-size: 15px;
+	height: 30px;
+}
+#moreNews.newsTab td
+{
+	background: url(img/Bg01.png) -192px -645px no-repeat;
+	text-indent: 10px;
+	padding: 2px 5px;
+}
+#moreNews.newsTab td a
+{
+	font-size: 14px;
+}
+#moreNews.newsTab td span
+{
+	color: #999;
+}
+/*新闻右侧*/
+#newsRight
+{
+	width: 290px;
+	float: right;
+}
+#buyLottLink
+{
+	width: 290px;
+	margin-top: 0px;
+}
+/*#buyLottLink .hd_a
+{
+	border-color: #D4D4D4;
+	background-color: #DDD;
+}
+#buyLottLink .hd_b
+{
+	border-color: #D4D4D4;
+	background-color: #FFF;
+}*/
+#buyLottLink .winTitle
+{
+	background: url(img/repeat-x.png) repeat-x -0px -86px;
+	height:34px;
+	line-height: 34px;
+	border-color: #a64233;
+	color: #f3f3f3;
+	font-size: 15px;
+	text-align: left;
+	border-top: 1px solid #a64233;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+#buyLottLink .winMain
+{
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #a64233;
+	padding: 5px 5px;
+}
+#buyLottLink .winMain a
+{
+	width: 84px;
+	display: inline-block;
+	height: 23px;
+	line-height: 23px;
+	background: url(img/Bg01.png) -194px -646px no-repeat;
+	padding-left: 6px;
+}
+#buyLottLink a
+{
+	color: #8d5a16;
+	font-weight: normal;
+}
+#buyLottLink a:hover
+{
+	color: red;
+	text-decoration: underline;
+}

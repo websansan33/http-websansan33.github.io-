@@ -1,0 +1,281 @@
+
+  .modal.modal-teeterboard
+  {
+    box-shadow: 0 0 0 100px #fff
+  }
+  .modal.modal-teeterboard .modal-dialog
+  {
+    /*margin: 0;
+    width: 100%;
+    height: 100%*/
+
+  }
+  /*body {  position: relative;  overflow: hidden;  display: flex;  min-height: 100vh;  justify-content: center;  align-items: center;  background-color: skyblue;}.cow {  position: relative;  font-size: 3.5em;}.hill {  position: absolute;  bottom: 0;  width: 100vw;  height: 40vh;  z-index: -1;  border-top-left-radius: 50%;  border-top-right-radius: 50%;  background-color: limegreen;}.hill:before {  content: '';}*/
+  .modal.modal-teeterboard .modal-dialog .modal-content
+  {
+    border: none;
+    /*border-radius: 0;*/
+    box-shadow: none;
+    background-color: transparent;
+    /*border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;*/
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-header
+  {
+    height: 50px;
+    line-height: 50px;
+    border-color: #e7e7e7;
+    text-align: center;
+    background-color: #f90;
+    /* 控制条纹的大小 */
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    /* 45度条纹的大小 */
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+    color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+    color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+    to(transparent));
+    background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+    transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+    transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+    transparent 75%, transparent);
+    /*background-image: linear-gradient(0deg,  #ffad33 0， #ffad33 50%, #f90 50%, #f90 100%);*/
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-header .close
+  {
+    position: relative;
+    z-index: 99;
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-header .modal-title
+  {
+    position: relative;
+    top: 0;
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-body
+  {
+    /*overflow: scroll;*/
+    background-color: #f4f2ca;
+    padding: 7px
+  }
+
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-footer
+  {
+    /*display: none*/
+    padding: 0;
+    border-top: 0;
+    text-align: center;
+    background-color: #f4f2ca;
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-footer .hill
+  {
+    height: calc(40px);
+    border-top-left-radius: 50%;
+    /*border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;*/
+    border-top-right-radius: 50%;
+    color: #472110;
+    background-color: limegreen;
+  }
+  .tree {
+    position: absolute;
+    bottom: 1vh;
+    left: 14vw;
+    display: inline-block;
+    font-size: 4em;
+    cursor: pointer;}
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-footer .hill:before
+  {
+    content: ' ';
+  }
+  /*顶部文字*/
+  .text-tips{
+  	display: block;
+  	font-size: 1.2em;
+  	font-weight: bold;
+  	padding: 7px;
+  }
+  .text-tips i{
+  	color: #ad1d9e;
+  }
+  /*胜场定义*/
+  .panel-win .bettitle
+  {
+  	display: block;
+  	padding-top: 20px;
+  	text-align: center;
+  	font-weight: bold;
+  	font-size: 1.6em;
+  	color: #bc6403;
+  }
+  .panel-win .betpoint{
+  	display: block;
+  	padding-bottom: 20px;
+  	text-align: center;
+  	font-weight: bold;
+  	font-size: 1em;
+  	color: #bc6403;
+  }
+  .panel-win .panel{
+  	border-radius: 5px;
+  }
+  .panel-win .panel .panel-heading{
+  	background-color: #fabd4e;
+  	padding: 0;
+  	height: 45px;
+  }
+  .panel-win .panel .panel-body{
+  	background-color: #f9de84;
+  }
+  /*负场定义*/
+  .panel-lose .bettitle
+  {
+  	display: block;
+  	padding-top: 20px;
+  	text-align: center;
+  	font-weight: bold;
+  	font-size: 1.6em;
+  	color: #2973bc;
+  }
+  .panel-lose .betpoint{
+  	display: block;
+  	padding-bottom: 20px;
+  	text-align: center;
+  	font-weight: bold;
+  	font-size: 1em;
+  	color: #2973bc;
+  }
+  .panel-lose .panel{
+  	border-radius: 5px;
+  }
+  .panel-lose .panel .panel-heading{
+  	background-color: #33c0f7;
+  	padding: 0;
+  	height: 45px;
+  }
+  .panel-lose .panel .panel-body{
+  	background-color: #83dcfa;
+  }
+  .col-xs-4,.col-lg-4,.col-sm-4{
+  	padding-left: .4em;
+  	padding-right: .4em;
+  }
+  
+  .eggresult{
+    position: relative;
+	left: 0;
+	width: 100%;
+	top:-15px;
+	clear: both;
+	z-index: 100;
+  }
+  .eggresult i{
+    position: relative;
+    display: block;
+    width: 2.8em;
+    font-size: 0.8em;
+    text-align: center;
+    color: #fffef2;
+    background-color: #aa7b55;
+    border-radius: 0.25rem;
+    margin-top: 1px;
+    outline: 1px solid transparent;
+  }
+  /*鸡蛋*/
+  .eggresult egg,
+  .eggresult egg:before,
+  .eggresult egg:after {
+    display: block;
+    position: relative;
+    content: "";
+    /*width: 185px;
+    height: 250px;*/
+    width: 2.4em;
+    height: 57px;
+    background-image: url(img/ji.png);
+    background-position: -100em -100em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-origin: center bottom;*/
+  }
+
+  .eggresult egg.egg{
+    background-position: -.6em -5px;
+  }
+  .eggresult egg.chick{
+    background-position: -4.7em -5px;
+  }
+  .eggresult egg.hen{
+    background-position: -13.0em -5px;
+  }
+  .eggresult egg.cock{
+    background-position: -8.9em 1px;
+  }
+
+  .eggresult egg:after {
+    /*-webkit-animation-name: tilt;
+    animation-name: tilt;*/
+    position: absolute;
+    top: 0;
+    /*background: -webkit-radial-gradient(25% 25%, circle, rgba(0, 0, 0, 0) 40%, #fcfcfb), -webkit-linear-gradient(0deg, #eae2d5, #e7dcc6, #fcfcfb, #fcfcfb);
+    background: radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 0) 40%, #fcfcfb), linear-gradient(90deg, #eae2d5, #e7dcc6, #fcfcfb, #fcfcfb);*/
+    /*box-shadow: inset 3px -10px 10px -10px #e4dac8, -5px 25px 10px -25px #7a6653;*/
+    /*-webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;*/
+  }
+
+@media (min-width:992px)
+{
+
+  .modal-dialog .modal-content
+  {
+    border: none;
+    /*border-radius: 0;*/
+    /*box-shadow: none;*/
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-header
+  {
+    height: 50px;
+    line-height: 50px;
+    border-color: #e7e7e7;
+    text-align: center;
+    background-color: #f90;
+    /* 控制条纹的大小 */
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+    /* 条纹的生成 */
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+    background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -o-linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    /*background-image: linear-gradient(0deg,  #ffad33 0， #ffad33 50%, #f90 50%, #f90 100%);*/
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-header .close
+  {
+    position: relative;
+    z-index: 99;
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-header .modal-title
+  {
+    position: relative;
+    top: 0;
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-body
+  {
+    /*overflow: scroll;*/
+    padding: 7px
+  }
+  .modal.modal-teeterboard .modal-dialog .modal-content .modal-footer
+  {
+    /*display: none*/
+    text-align: center;
+  }
+}

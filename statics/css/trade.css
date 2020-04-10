@@ -1,0 +1,65 @@
+#tradeLeft{float:left;width:140px;height:auto;overflow:hidden;margin-top:10px;background-color:aliceBlue;}
+#tradeLeft .hd_a{border-color:#6B9AC4;background-color:#6B9AC4;}
+#tradeLeft .hd_b{border-color:#6B9AC4;background-color:#6B9AC4;}
+#tradeLeft .winTitle{border-color:#6B9AC4;color:#FFF;font-size:15px;}
+#lottList{padding:10px 0;height:828px;}
+#lottList a{display:block;height:26px;line-height:26px;padding-left:20px;font-size:13px;border-top:1px solid aliceBlue;border-bottom:1px solid aliceBlue;color:#0F3F94}
+#lottList a:hover{background-color:#FFF;border-top:1px solid #DAEBF2;border-bottom:1px solid #DAEBF2;color:red;}
+#lottList a.line{height:1px;background-color:#D5E3EE;font-size:1px;margin:5px 0px;}
+
+#tradeMain{width:580px;float:left;margin-top:10px;margin-left:10px;}
+#hotLott{margin-top:10px;font-size:0px;line-height:0px;}
+#hotLott .hd_a{border-color:#D4D4D4;background-color:#C6D5E5;}
+#hotLott .hd_b{border-color:#D4D4D4;background-color:#F4F8FB;}
+#hotLott .winTitle{background:url(img/Bg01.png) repeat-x 0px -1007px;border-color:#C6D5E5;color:#333;font-size:15px;}
+#hotLott .winMain{border:1px solid #B6CBE2;height:212px;overflow:hidden;}
+#hotLottList li{background:url(img/Bg01.png) repeat-x 0px -1096px;height:70px;border-bottom:1px solid #E0E0E7;float:left;width:100%;}
+#hotLottList li.bot{border-bottom:none;}
+#hotLottList .lottInfo{float:left;width:290px;padding-left:10px;}
+#hotLottList .lottTime{float:left;width:155px;text-align:center;color:#999;margin-top:15px;padding-top:10px;}
+#hotLottList .lottBuy{float:left;width:120px;text-align:center;margin-top:25px;}
+#hotLottList dl{padding-top:14px;}
+#hotLottList dt{width:50px;height:50px;margin-right:20px;display:inline-block;float:left;}
+#hotLottList dd{line-height:180%;}
+#hotLottList dd label{font-size:15px;font-weight:bold;margin-right:12px;}
+#hotLottList .timer{height:30px;line-height:30px;font-size:14px;font-weight:bold;color:#333;}
+#hotLottList .timer b{font-size:16px;}
+#c_ssq dt{background-position:5px 2px;}
+#c_f3d dt{background-position:5px -60px;}
+#c_7lc dt{background-position:5px -360px;}
+
+#tradeHemai{margin-top:10px;}
+#tradeHemai .hd_a{border-color:#6F9BCF;background-color:#8FAECF;}
+#tradeHemai .hd_b{border-color:#5380B4;background-color:#6F9BCF;}
+#tradeHemai .winTitle{background:url(img/Bg01.png) repeat-x 0px -1167px;border-color:#6F9BCF;color:#FFF;font-size:15px;}
+#tradeHemai .winSub{background-color:#E9EFF6;height:32px;line-height:32px;border-color:#B0D0F4;padding-left:20px;}
+#tradeHemai .winSub a{display:inline-block;color:#0F3F94;padding:0px 8px;margin:0px 3px;position:relative;}
+#tradeHemai .winSub a.cur{color:#333;}
+#tradeHemai .winSub a.cur i{display:inline-block;position:absolute;top:27px;left:45%;background:url(img/Bg01.png) -15px -561px;width:9px;height:6px;}
+#tradeHemai .winSub .line{height:12px;width:1px;margin-top:6px;border-right:solid 1px #C2C2C2;overflow:hidden;}
+#reloadHemai{margin:5px 10px 0 0;}
+#tradeHemai .winMain{height:388px;overflow:hidden;}
+.hemaiTab{width:100%;text-align:center;}
+.hemaiTab th{height:35px;line-height:35px;color:#999;font-weight:normal;background-color:#FFF;}
+.hemaiTab th,.hemaiTab td{border-top:1px solid #FFF;border-bottom:1px solid #E1E1E1;}
+.hemaiTab td{height:30px;line-height:30px;}
+.hemaiTab td a{color:#0F3F94}
+.hemaiTab td a s{color:#FFF}
+.hemaiTab tr{background-color:#F4F4F4;}
+.hemaiTab tr:hover{background-color:#FFF;color:red;}
+.nobd{border-bottom:none;}
+.nobd a{color:#0F3F94;height:30px;line-height:30px;margin-right:12px;}
+.nobd a:hover{color:red;}
+
+#tradeRight{float:right;width:260px;margin-left:10px;}
+#tradeRight .winDiv4{margin-top:10px;}
+#tradeRight .hd_a{border-color:#D4D4D4;background-color:#DDD;}
+#tradeRight .hd_b{border-color:#D4D4D4;background-color:#FFF;}
+#tradeRight .winTitle{background:url(img/Bg01.png) repeat-x 0px -1007px;border-color:#D4D4D4;color:#333;font-size:15px;}
+#tradeRight .winMain{height:auto;overflow:hidden;}
+#tradeNewsDiv .winMain{padding:11px 8px;}
+.newsTab{}
+.newsTab span{color:#ccc;}
+.tradeBang{height:200px;padding:6px 10px;}
+.tradeBang li{height:25px;line-height:25px;float:none;clear:both;}
+.tradeBang li span{float:right;color:red;}

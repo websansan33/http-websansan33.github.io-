@@ -1,0 +1,106 @@
+HTML, BODY {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+}
+BODY {
+	/*font-family: "Lucida Grande", Arial, Helvetica, sans-serif;*/
+	color: #666666;
+	font-size: 1em;
+	background: #000;
+	height: 100%;
+	text-align: center;
+}
+H1, H2 {
+	color: #bc2307;
+	margin: 0;
+	padding: 0;
+	font-size: 1.4em;
+	/*padding-bottom: 3px;
+	margin-bottom: 15px;*/
+	/*border-bottom: 1px solid #bc2307;*/
+}
+H1 {
+	padding-bottom: 3px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #bc2307;
+}
+
+.bgstretcher-page { 
+	text-align: center;}
+#page {
+	margin: 0 auto;
+	width: 50%;
+	min-width: 350px;
+	max-width: 550px;
+	text-align: left;
+}
+.page-top, .page-bottom,
+.page-content {
+	display: block;
+	/*float: left;*/
+	width: 100%;
+}
+.page-top, .page-bottom { 
+	height: 30px;}
+.page-top { 
+	margin-top: 30px;
+}
+.page-bottom { 
+	
+}
+
+.page-content {
+	display: block;
+	color: #343434;
+	border-top: solid 1px #fff;
+	border-bottom: solid 1px #5fefc0;
+	padding: 15px;
+
+	/*height: 110px;*/
+	background: rgba(255, 255, 255, 0.7) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+	filter: Alpha(opacity=70);
+	background: #fff;/*实现IE背景透明*/
+	border-radius: 8px;
+	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	/*	background: url("images/bg/page-bg.png") repeat-y left top; */
+	/*	_background: none;*/
+	/*	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/bg/page-bg.png', sizingMethod='scale');*/
+}
+
+.page-wrapper { 
+	/*float: left;*/
+	display: block;
+	width: 100%;
+}
+
+.page-wrapper span
+{
+	/*position: relative;*/
+	/*实现IE文字不透明*/
+	opacity: 1.0;
+	padding-top: 10px;
+}
+
+.page-wrapper #tips{
+	font-size: 0.9em;
+	padding-top: 10px;
+}
+
+.page-wrapper a{
+	color: #0A8ECC;
+	text-decoration: none;
+}
+
+.page-wrapper a:hover{
+	color: #343434;
+	text-decoration: none;
+}
+
+P.larger-size { 
+	font-size: 2em;}
+#page STRONG { 
+	color: #FFFFFF;}

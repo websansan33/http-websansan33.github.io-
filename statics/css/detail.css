@@ -1,0 +1,252 @@
+/*整个方案表格左边或顶部标题部分*/
+.bTab th
+{
+	width: 12%;
+	color: #dd731c;
+	vertical-align: top;
+	background-color: #f5fae7;
+}
+/*方案表格内容部分*/
+.bTab td
+{
+	color: #5b5b5b;
+	/*padding-left: 10px;*/
+}
+/*红色字*/
+.bTab td b,.bTab th b
+{
+	margin: 0px 3px;
+	color: #FF0000;
+	font-weight: normal;
+}
+/*提示字*/
+.bTab td span
+{
+	color: #dd8b55;
+	/*margin-right: 10px;*/
+}
+#hmTitleDiv
+{
+	width: auto;
+	text-align: left;
+	float: none;
+}
+/*已下注号码下拉框*/
+#orderCodeBox:hover,#orderKeepBox:hover
+{
+	background-color: #f2f2f2;
+}
+.bgWhite
+{
+	background-color: #FFFFFF;
+}
+#orderCodeBox
+{
+	height: 100px;
+	overflow: hidden;
+}
+#orderCodeBox div
+{
+	height: auto !important;
+	height: 80px; /*假定最低高度是200px*/
+	min-height: 80px;
+	line-height: 160%;
+	text-align: left;
+	overflow-y: scroll;
+	overflow-x: auto;
+	word-wrap: break-word;
+	width: auto;
+}
+#orderContentBox
+{
+	line-height: 180%;
+	text-align: left;
+}
+#orderKeepBox
+{
+	padding: 2px;
+}
+/*投注期号*/
+#keepDetailTab
+{
+	width: 100%;
+	background-color: #FFFFFF;
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+#keepDetailTab td
+{
+	padding: 0px;
+	height: 22px;
+}
+#keepDetailTab th
+{
+	width: auto;
+}
+.bTab .openCode
+{
+	line-height: 25px;
+}
+.bTab .openCode span
+{
+	color: #f41800;
+}
+/*合买认购列表*/
+#uList,#mList
+{
+	margin: 0 10px 10px 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	list-style: none;
+	line-height: 250%;
+	border-top: 1px dashed #CCCCCC;
+}
+
+
+#uList ul,#mList ul
+{
+	list-style: outside none none;
+}
+
+#mList , #uList
+{
+	MARGIN-left: 1px;
+	TEXT-ALIGN: left
+}
+#mList DT,#uList DT
+{
+	FONT-SIZE: 11px;
+	FLOAT: left;
+	WIDTH: 20%;
+	LINE-HEIGHT: 24px;
+	HEIGHT: 22px;
+	padding-top: 1px;
+	border-bottom: 1px dotted #999;
+	overflow: hidden;
+}
+#mList DD,#uList DD
+{
+	/*WIDTH: 20%;*/
+	CLEAR: both
+}
+.red
+{
+	font-weight: bold;
+	color: #FF0000;
+}
+
+#uList li
+{
+	clear: both;
+	width: 100%;
+	color: #999999;
+	padding-left: 10px;
+}
+#uList li span
+{
+	float: right;
+	color: #999999;
+	padding-right: 10px;
+}
+#uList li u
+{
+	color: #339933;
+	text-decoration: none;
+}
+#uList li i
+{
+	color: #ff3300;
+	font-style: normal;
+}
+#mList li
+{
+	clear: both;
+	width: 100%;
+	color: #ff2600;
+	padding-left: 10px;
+}
+#mList li span
+{
+	float: right;
+	color: #999999;
+	padding-right: 10px;
+}
+#uList li:hover,#mList li:hover
+{
+	background-color: #EEEEEE;
+}
+#hmBuyTd
+{
+	margin: auto;
+	text-align: center;
+}
+
+#betTop .detailTop
+{
+	margin-left: 90px;
+	padding: 25px 10px;
+}
+#betTop .orderTitle
+{
+	height: 25px;
+	line-height: 25px;
+}
+#betTop .orderTitle span
+{
+	font-size: 16px;
+	margin-right: 10px;
+}
+#betTop .orderTime span
+{
+	color: #999;
+	font-size: 13px;
+	margin: 0px 10px;
+}
+/*基本信息*/
+.detailBase
+{
+	height: 32px;
+	line-height: 32px;
+	padding-left: 20px;
+	background-color: #dedeba;
+	font-size: 14px;
+}
+#detailTab{
+	border: 1px solid #ebd9c9;
+	border-top: none;
+	padding: 0px 1px 1px 1px;
+}
+#detailTab .bTab td
+{
+	padding-left: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #444;
+}
+#detailTab .bTab th
+{
+	padding: 5px;
+}
+#detailBack
+{
+	float: right;
+	color: #c20a2f;
+}
+
+.baoditip
+{
+	display: inline-block;
+/*	background: url(img/LoginBg.png) no-repeat 0px -984px;*/
+	background: none repeat scroll 0 0 #ff3d00 ;
+	margin-left: 2px;
+	padding: 2px;
+	line-height: 12px;
+	border: none;
+	font-size: 12px;
+/*	font-weight: bold;*/
+	text-align: center;
+	color: #FFF;
+	border-radius: 2px;
+}

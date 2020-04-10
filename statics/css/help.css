@@ -1,0 +1,70 @@
+.mainWidth{width:950px;}
+#helpTop{height:65px;border-bottom:4px solid #195C93}
+#helpTop div{float:left;}
+#helpLogo{background:url(img/Logo-2.png) no-repeat 5px 5px;height:65px;width:180px;}
+#logoTxt{color:#999;margin-top:8px;border-left:1px solid #EEE;padding-left:12px;margin-left: 10px;}
+#logoTxt span{color:#999;}
+#helpTopLink{text-align:right;width:620px;padding-top:40px;font-size:15px;}
+#helpTopLink a{font-size:15px;}
+
+#mainDiv{margin-top:5px;}
+#bankLink{overflow:hidden;height:42px;line-height:42px;}
+#helpLeft{width:172px;float:left;}
+#menuTitle b{display: block;height:1px;overflow:hidden;}
+#menuTitle b.b1{background:#D8D9E7;margin:0 2px;}
+#menuTitle b.b2{background:#2D5C86;border:1px solid #D8D9E7;border-width:0 1px;margin:0 1px;}
+#helpMenu{background:#FFF;}
+#helpMenu .winTitle{height:25px;border:none;color:#FFF;text-align:center;padding-left:0px;font-size:15px;}
+#helpMenu .winMain{border:1px solid #D8D9E7;height:auto;overflow:hidden;}
+#helpMenu .winMain dl{padding:0 5px;color:#0F3F94;}
+#helpMenu .winMain dt{background:#eef0f8;text-indent:22px;height:25px;line-height:25px;font-size:15px;font-weight:bold;margin:5px 0;}
+#helpMenu .winMain dd{height:25px;line-height:25px;text-indent:22px;margin:2px 0;}
+#helpMenu .winMain dd a{font-size:14px;color:#0F3F94;}
+#helpMenu .winMain dd.sel{}
+#helpMenu .winMain dd.sel a{font-size:14px;color:#FFF;}
+
+#helpRight{float:right;width:770px;}
+#helpProcess{background:url(img/HelpProcessBg.png) no-repeat;height:117px;width:768px;overflow:hidden;}
+.helpWinTitle{height:32px;line-height:31px;margin-top:10px;}
+.helpWinTitle b.t_l,.helpWinTitle b.t_r{width:3px;height:32px;float:left;font-size:0;overflow:hidden;display:block;}
+.helpWinTitle b.t_r{background-position: -5px -68px;}
+.helpWinTitle div{height:32px;line-height:31px;float:left;width:750px;padding-left:12px;font-size:15px;font-weight:bold;}
+.helpWinMain{border:1px solid #B1C7DF;border-top:none;height:auto;overflow:hidden;}
+
+#helpProcess ul{margin-top:50px;margin-left:15px;}
+#helpProcess li a{display:inline-block;width:95px;height:40px;margin-right:30px;float:left;}
+#hotHelpDiv{padding:15px 20px;padding-right:0px;width:746px;}
+#hotHelpDiv a{display:inline-block;width:370px;height:20px;line-height:20px;overflow:hidden;margin:5px 0;font-size:14px;color:#0F3F94;text-indent:12px;background:url(img/Bg01.png) -192px -646px no-repeat;}
+#helpCateTitle{margin-top:0px;}
+#helpCate{padding:10px 20px;width:726px;height:400px;display:table;}
+#helpCate ul{margin:0;padding:0;}
+#helpCate li{margin:5px 0;padding:3px 0;text-indent:12px;background:url(img/Bg01.png) -192px -646px no-repeat;border-bottom:1px dashed #EEE;}
+#helpCate a{height:20px;line-height:20px;font-size:14px;color:#0F3F94;overflow:hidden;}
+
+#buyLottDiv{padding:0px;width:766px;border-bottom:none;}
+#buyLottDiv div{float:left;width:362px;height:80px;padding:10px;border-bottom:1px solid #d3d3d3;border-right:1px solid #d3d3d3;overflow:hidden;color:#CCC;}
+#buyLottDiv div.rt{border-right:none;width:363px;}
+#buyLottDiv div h1{font-size:15px;height:30px;line-height:30px;color:#333;}
+#buyLottDiv div a{margin:0 10px;display:inline-block;height:25px;line-height:25px;color:#0F3F94;}
+
+.hs_menu{padding:10px 0 18px 28px;display:inline-block;color:#999;}
+.hs_menu b{display:inline-block;width:9px;height:9px;margin-left:10px;border:0px solid red}
+.hs_menu b.b_show{}
+.hs_menu b.b_hidden{}
+
+#helpMain{border:1px solid #D8D9E7;width:768px;min-height:461px;height:auto!important;height:461px;}
+#helpTitle{padding:20px;font-size:16px;border-bottom:1px dashed #EEE;text-align:center;color:#0F3F94}
+#helpContent{padding:20px;height:auto;overflow:hidden;border-bottom:1px dashed #EEE;}
+#helpContent *{font-size:15px;line-height:180%;}
+#helpContent p{text-indent:2em;margin-bottom:20px;}
+#helpContent li{text-indent:2em;}
+#helpRelated{padding:20px;}
+#helpRelated dl dt{font-size:15px;margin:5px 0;}
+#helpRelated dl dd{height:20px;line-height:20px;margin:3px 24px;}
+#helpRelated dl dd a{color:#0F3F94;font-size:14px;}
+#helpRelated dl dd a:hover{color:red;text-decoration:underline;}
+
+.rTab{background-color:#EEEEEE;}
+.rTab th{background-color:#F6F7FF;font-weight:normal;text-indent:0px;text-align:center;color:#336699;}
+.rTab td{background-color:#FFFFFF;text-indent:0px;}
+.rTab .fixTd{width:120px;}

@@ -1,0 +1,266 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /*  background: url(../images/newtpl/body-bg.jpg) no-repeat center center fixed;*/
+}
+
+.login-area{
+  position: relative;
+  width: 330px;
+  margin: 30px auto 0;
+  padding: 20px 10px 30px 10px;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #5fefc0;
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;/*实现FF背景透明，文字不透明*/
+  filter: Alpha(opacity=80);
+  background: #fff;/*实现IE背景透明*/
+  border-radius: 8px;
+}
+
+.mainbody
+{
+  position: static;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+/* 登录注册输入框 */
+.login-input{
+  display: block;
+  margin: 5px 0 5px 0;
+  color: #3d4851;
+  font-size: 16px;
+  box-shadow: none;
+  border: solid 1px #e39d48;
+  border-radius: 5px;
+  background: #fffddb;
+}
+/* 登录注册输入框左侧标题 */
+.login-input .title{
+  display: inline-block;
+  font-style: normal;
+  width: 25%;
+  height: 42px;
+  text-align: right;
+  letter-spacing: 0.2em;
+  color: #656565;
+  font-family:Microsoft YaHei,微软雅黑,MicrosoftJhengHei,华文细黑,STHeiti,MingLiu;
+}
+/* 登录注册输入框提示小字 */
+.login-input span{
+	font-family:KaiTi,BiauKai;
+}
+
+.login-input input[type='text'],input[type='password']{
+  width: auto;
+  height: 40px;
+  margin-left: 2px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 14px;
+}
+
+.slogan{
+  color: #fff;
+  font-size: 14px;
+}
+
+.user-code ~ img{
+  position: absolute;
+  cursor: pointer;
+  /*top: 10;*/
+  right: 5%;
+  /*transform: translateY(33%);*/
+}
+
+.login-area .user-code{
+  width: 180px;
+  margin: 0 5px 0 0;
+  color: #75797b;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+}
+
+
+
+.login-info{
+  text-align: center;
+}
+
+.login-loading{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: solid 1px #fae3a0;
+  margin-left: 0px;
+  margin-top: 0px;
+  background: #2b2b2b;
+  z-index: 1;
+}
+
+.login-loading .thumb{
+  height: 60px;
+  margin: 60px 0 0 0;
+  background: url(../images/loading.gif) no-repeat center center;
+}
+
+.login-loading .text{
+  margin: 20px 0 0 0;
+  color: #e6faff;
+  text-align: center;
+}
+
+#loginResult
+{
+  width: 330px;
+  border: 1px solid #FFC28C;
+  border-radius: 3px;
+  background-color: #FFF9D9;
+  margin: 20px auto 0;
+  text-align: left;
+  padding: 8px;
+  vertical-align: middle;
+}
+#loginResult #resultTxt
+{
+  display: inline-block;
+  line-height: 28px;
+  color: red;
+}
+
+.fillTip
+{
+  display: none;
+}
+.fillNO,
+.fillON,
+.fillOK{
+  position: relative;
+  display: block;
+  top: -19px;
+  left: 25%;
+  height: 0;
+  text-align: left;
+  line-height: 22px;
+  font-size: 13px;
+}
+.fillON
+{
+  color: #000000;
+}
+.fillOK
+{
+  color: #0b8c1e;
+}
+.fillNO
+{
+  color: #ce0005;
+}
+.fillNO:before,
+.fillON:before,
+.fillOK:before{
+  position: relative;
+  content: "";
+  display: inline-block;
+  top: 2px;
+  left: 0;
+  background-image: url("img/Bg01.png");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+}
+.fillON:before
+{
+  color: #000000;
+  background-position: -185px -1466px;
+}
+.fillOK:before
+{
+  color: #0b8c1e;
+  background-position: -185px -1403px;
+}
+.fillNO:before
+{
+  color: #ce0005;
+  background-position: -185px -1436px;
+}
+
+.login-area .user-login-button{
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  color: #75797b;
+  border-radius: 5px;
+  padding: 0 15px;
+  border: solid 1px #f7d162;
+  /*border: none;*/
+  background: #fff8b0;
+  cursor: pointer;
+  letter-spacing: 0.5em;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+.login-area .user-login-button:active{
+  background: #ff7979;
+}
+
+.button {
+	margin: 0 auto;
+    font-weight: bold;
+    text-shadow: 0 1px 0 white;
+    text-decoration: none;
+    color: black;
+    background-color: #F2F2F2;
+    padding: 9px 20px;
+    cursor: pointer;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    letter-spacing: 0.5em;
+    background-image: -webkit-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: -moz-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: -ms-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: -o-linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    background-image: linear-gradient(90deg, #DBDBDB, #F2F2F2);
+    
+    border: 1px solid #B3B3B3;
+    
+    -webkit-box-shadow: inset 0 0 2px 1px white, 0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.06);
+    -moz-box-shadow: inset 0 0 2px 1px white, 0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.06);
+    box-shadow: inset 0 0 2px 1px white, 0 2px 5px rgba(0,0,0,0.15), inset 0 -17px 0 rgba(0,0,0,0.06);
+}
+.button.pushed {
+    position: relative;
+}
+.button:hover {
+    background-image: -webkit-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: -moz-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: -ms-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: -o-linear-gradient(90deg, #E8E8E8, #F7F7F7);
+    background-image: linear-gradient(90deg, #E8E8E8, #F7F7F7);
+}
+.button.pushed:active {
+    top: 2px;    
+}
+.button:active {
+    -webkit-box-shadow: inset 0 0 2px 1px rgba(0,0,0,0.1), inset 0 -17px 0 rgba(0,0,0,0.06);
+    -moz-box-shadow: inset 0 0 2px 1px rgba(0,0,0,0.1), inset 0 -17px 0 rgba(0,0,0,0.06);
+    box-shadow: inset 0 0 2px 1px rgba(0,0,0,0.1), inset 0 -17px 0 rgba(0,0,0,0.06);
+}

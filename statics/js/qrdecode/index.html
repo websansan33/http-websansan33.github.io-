@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      识别二维码
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <style type="text/css">
+      body{
+        margin: 0;}
+      .module-content{
+        min-width: 770px;
+        max-width: 1000px;
+        width: 100%;
+        color: #000;
+        margin: 0 auto;
+      }
+      .module-head{
+        text-align: center;
+        font-weight: 500;
+        margin: 0;
+        font-size: 30px;
+        height: 100px;
+        line-height: 100px;
+        color: #000;
+      }
+      .box h3{
+        font-weight: 300;
+        margin: 0;
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+        color: #000;
+      }
+      .url-box{
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+      }
+      #file{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body onload="load()">
+    <div class="module-content">
+      <!--解析二维码-->
+      <h1 class="module-head">
+        解析二维码
+      </h1>
+      <div class="box">
+        <h3>
+          长按二维码解析
+        </h3>
+        <img id="neturl" onClick="getUrl(this,'img-url')" src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1062989499,1682648318&fm=58"/>
+        <p class="url-box" id="urlBox">
+        </p>
+      </div>
+
+      <div class="box">
+        将二维码图片拖放到下面的黑色框框内解码获取信息<br />
+        <canvas id="qr-canvas" style="width: 120px;height: 120px;border:solid 1px #000;">
+        </canvas>
+        <p class="url-box" id="urlBox">
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>
+          上传二维码解析
+        </h3>
+        <div style="position: relative;">
+          <img style="width: 120px;height: 120px;" src="img/tu.png"/>
+          <input type="file" onChange="getUrl(this,'file-url')" name="" id="file" value="" />
+          <p class="url-box" id="urlBox">
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/llqrcode.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script src="js/analyticCode.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script type="text/javascript">
+
+      function getUrl(e,param){
+        analyticCode.getUrl(param,e,function(url1,url2){
+            /**
+            url1===>http://weixin.qq.com/r/lkNRSXbEbCsTrTIq9xaE
+            url2===>http://cdn.atool.org/res/atool-org-weixin.jpg
+            */
+            console.log("url1===>"+url1);
+            console.log("url2===>"+url2);
+            //向兄弟元素下一个元素插入结果
+            e.nextElementSibling.innerHTML = url1;
+            //向兄弟元素上一个元素插入图片
+            e.previousElementSibling.src = url2;
+          });
+      }
+      //执行函数
+      getUrl(document.getElementById("neturl"),'img-url');
+
+      //验证是不是有效的URL地址
+      function testUrlAddress(aurl){
+        var strRegex ='(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]';
+        var re=new RegExp(strRegex);
+        if(aurl!=""){
+          if (!re.test(aurl)) {
+            alert("请输入正确的url地址-? "+aurl);
+          }
+        }
+      }
+
+
+      //testUrlAddress("http://cdn.atool.org/res/atool-org-weixin.jpg");
+      //testUrlAddress("http://weixin.qq.com/r/lkNRSXbEbCsTrTIq9xaE");
+      //testUrlAddress("weixin.qq.com/r/lkNRSXbEbCsTrTIq9xaE");
+      //testUrlAddress("weixin.qq.com");
+      //testUrlAddress("http://weixin.qq.com");
+      //testUrlAddress("r/lkNRSXbEbCsTrTIq9xaE");
+    </script>
+
+    <script type="text/javascript">
+      //拖拉图片
+      var gCtx = null;
+      var gCanvas = null;
+      var filectrl= null;
+      //var imageData = null;
+      //var ii=0;
+      //var jj=0;
+      //var c=0;
+
+
+      function dragenter(e) {      e.stopPropagation();      e.preventDefault();  }
+      function dragover(e) {      e.stopPropagation();      e.preventDefault();  }
+      function drop(e) {      e.stopPropagation();      e.preventDefault();      var dt = e.dataTransfer;      var files = dt.files;      handleFiles(files);  }
+      function drop2(e) {      
+      e.stopPropagation();      
+      e.preventDefault();      
+      var dt = e.dataTransfer;      
+      var files = dt.files;      
+      handleFiles(files);  
+      }
+      function handleFiles(f) {
+        var o = [];
+        for (var i = 0; i < f.length; i++) {
+          var reader = new FileReader();
+          reader.onload = (function (theFile) {
+              return function (e) {
+                console.log(e.target.result);
+                //qrcode.decode(e.target.result);
+                //alert(e.target.result);
+                //getUrl(e.target.result,'img-url');
+                //                qrcode.decode(e.target.result);
+                //                qrcode.callback = function(imgMsg){
+                //                  fn(imgMsg,'');
+                //                  alert(imgMsg);
+                //                }
+                analyticCode.getUrl("data-url",e.target.result,function(url1,url2){
+                    //alert(url1);
+                    //console.log("url1===>"+url1);
+                    //console.log("url2===>"+url2);
+                    //向兄弟元素下一个元素插入结果
+                    gCanvas.nextElementSibling.innerHTML = url1;
+                    //向兄弟元素上一个元素插入图片
+                    var pic = new Image();
+                    pic.src = url2;/*地址要填相对HTML文件的地址*/
+                    pic.onload = function(){//等图片加载完成后再绘制
+                      gCtx.drawImage(pic,0,0,120,120);
+                    }
+                    //e.previousElementSibling.src = url2;
+                  });
+
+              };
+            })(f[i]);
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(f[i]);
+        }
+      }
+      function load() {
+        initCanvas(120, 120);
+        initInpuFile();
+        //qrcode.success = function (d) { alert('javascript读出的二维码信息为：' + utf8ToUtf16(d)) };
+        //qrcode.error = function (d) { alert('读取二维码信息错误：' + utf8ToUtf16(d)) };
+        //qrcode.callback = function (d, status) { alert('读取二维码信息' + (status == 1 ? '成功' : '失败') + '：' + utf8ToUtf16(d)); };
+        //qrcode.decode("meqrthumb.png");
+      }
+      function initInpuFile(){
+      	filectrl = document.getElementById("file");
+        filectrl.addEventListener("dragenter", dragenter, false);
+        filectrl.addEventListener("dragover", dragover, false);
+        filectrl.addEventListener("drop", drop2, false);
+      }
+
+      function initCanvas(ww, hh) {
+        gCanvas = document.getElementById("qr-canvas");
+        gCanvas.addEventListener("dragenter", dragenter, false);
+        gCanvas.addEventListener("dragover", dragover, false);
+        gCanvas.addEventListener("drop", drop, false);
+        var w = ww;
+        var h = hh;
+        gCanvas.style.width = w + "px";
+        gCanvas.style.height = h + "px";
+        gCanvas.width = w;
+        gCanvas.height = h;
+        gCtx = gCanvas.getContext("2d");
+        gCtx.clearRect(0, 0, w, h);
+        //imageData = gCtx.getImageData(0, 0, 120, 120);
+      }
+
+      function utf8ToUtf16(s) {//将utf-8字符串转码为unicode字符串，要不读取的二维码信息包含中文会乱码
+        if (!s) {
+          return;
+        }
+
+        var i, codes, bytes, ret = [], len = s.length;
+        for (i = 0; i < len; i++) {
+          codes = [];
+          codes.push(s.charCodeAt(i));
+          if (((codes[0] >> 7) & 0xff) == 0x0) {
+            //单字节  0xxxxxxx
+            ret.push(s.charAt(i));
+          } else if (((codes[0] >> 5) & 0xff) == 0x6) {
+            //双字节  110xxxxx 10xxxxxx
+            codes.push(s.charCodeAt(++i));
+            bytes = [];
+            bytes.push(codes[0] & 0x1f);
+            bytes.push(codes[1] & 0x3f);
+            ret.push(String.fromCharCode((bytes[0] << 6) | bytes[1]));
+          } else if (((codes[0] >> 4) & 0xff) == 0xe) {
+            //三字节  1110xxxx 10xxxxxx 10xxxxxx
+            codes.push(s.charCodeAt(++i));
+            codes.push(s.charCodeAt(++i));
+            bytes = [];
+            bytes.push((codes[0] << 4) | ((codes[1] >> 2) & 0xf));
+            bytes.push(((codes[1] & 0x3) << 6) | (codes[2] & 0x3f));
+            ret.push(String.fromCharCode((bytes[0] << 8) | bytes[1]));
+          }
+        }
+        return ret.join('');
+      }
+    </script>
+  </body>
+</html>

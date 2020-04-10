@@ -1,0 +1,401 @@
+.loginBody
+{
+	background-color: #eae4d0;
+}
+#loginTop
+{
+	background: url(img/LoginBg.png) repeat-x 0px 0px;
+	height: 99px;
+	border-bottom: 2px solid #d56128;
+	text-align: center;
+}
+#loginLogoDiv
+{
+	width: 950px;
+	height: 99px;
+	line-height: 99px;
+	margin: 0px auto;
+	padding-top: 30px;
+}
+#loginLogo
+{
+	float: left;
+	background: url(img/Loginlogo.png) no-repeat 0px 0px;
+	width: 220px;
+	height: 69px;
+}
+#loginImg
+{
+	float: left;
+	/*background: url(img/LoginBg.png) no-repeat 0px -1066px;*/
+	width: 67px;
+	height: 42px;
+}
+#loginTopLink
+{
+	margin: 0px;
+	margin-right: 55px;
+	float: right;
+	height: 50px;
+	overflow: hidden;
+	line-height: 75px;
+}
+#loginTopLink a
+{
+	margin: 0px 10px;
+	color: #923c12;
+}
+#loginMain
+{
+	float: none;
+	clear: both;
+	background: url(img/LoginBg.png) repeat-x 0px -99px;
+	height: 458px;
+	text-align: center;
+}
+#mainDiv
+{
+	position: relative;
+	margin: 0px auto;
+	width: 1000px;
+}
+#loginDiv
+{
+	position: absolute;
+	top: -15px;
+	left: 560px;
+	border: 0px solid red;
+	width: 350px;
+}
+#loginDiv #sl
+{
+	width: 10px;
+	height: 13px;
+	float: left;
+	border: 0px solid red;
+	background: url(img/LoginBg.png) no-repeat -15px -1047px;
+}
+#loginDiv #sr
+{
+	width: 10px;
+	height: 13px;
+	float: right;
+	border: 0px solid red;
+	background: url(img/LoginBg.png) no-repeat 0px -1047px;
+}
+#loginBoxBd
+{
+	float: left;
+	border-top: 1px solid #d56128;
+}
+#loginMainBg
+{
+	margin: 0px;
+	width: auto;
+	height: 295px;
+	overflow: hidden;
+	background: url(img/LoginBannerBg.png) no-repeat 0 0;
+}
+#JoinMainBg
+{
+	margin: 0px;
+	width: auto;
+	height: 295px;
+	overflow: hidden;
+	background: url(img/joinBannerBg.png) no-repeat 0 0;
+}
+#loginBotBg
+{
+	margin-top: 10px;
+	color:#ca3515;
+	width: auto;
+	height: 100px;
+	overflow: hidden;
+	text-align: left;
+	padding-left: 40px;
+	line-height: 46px;
+}
+#loginBox
+{
+	width: 328px;
+	height: 400px;;
+	background: #FFF url(img/LoginBg.png) repeat-x 0 -558px;
+	border: 1px solid #FFF;
+}
+#loginTitle
+{
+	font-size: 15px;
+	font-weight: bold;
+	color: #666;
+	text-align: left;
+	height: 45px;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+#loginTitle a
+{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(img/LoginBg.png) no-repeat -33px -1048px;
+	margin-right: 5px;
+	margin-top: 7px;
+}
+#loginResult
+{
+	visibility: hidden;
+	height: 28px;
+	border: 1px solid #FFC28C;
+	background-color: #FFF9D9;
+	line-height: 28px;
+	margin: 1px 25px;
+	text-align: left;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+#loginResult a
+{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(img/LoginBg.png) no-repeat -53px -1048px;
+	margin-right: 5px;
+	margin-top: 7px;
+}
+#loginResult #resultTxt
+{
+	display: inline-block;
+	height: 12px;
+	line-height: 12px;
+	color: red;
+}
+#loginBox ul
+{
+	margin: 0px 25px;
+}
+#loginBox ul li span
+{
+	width: 220px;
+	display: block;
+	word-wrap: normal;
+	margin-left: 83px;
+	color: #f4920b;
+}
+#loginBox ul li
+{
+	height: 36px;
+	/*line-height: 32px;*/
+	text-align: left;
+	margin: 2px 0 8px 0;
+	border: 0px solid red;
+}
+
+#loginBox ul li i{
+	font-style: normal;
+	font-size: 14px;
+	margin-right: 1px;
+}
+
+#loginBox ul li label
+{
+	font-size: 15px;
+	/*margin-right: 5px;*/
+}
+#loginBox ul li input
+{
+	font-size: 14px;
+	width: 150px;
+	height: 16px;
+	padding: 3px 4px;
+	background: url(img/LoginBg.png) 0 -958px repeat-x;
+	border: 1px solid #fbd673
+}
+#loginBox #mycode
+{
+	width: 50px;
+	background: #FFF;
+	border: 1px solid #CCC;
+}
+#loginBox #submitBut
+{
+	background: url(img/LoginBg.png) no-repeat 0px -984px;
+	width: 85px;
+	height: 31px;
+	margin-left: 65px;
+	padding: 0px;
+	line-height: 31px;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+}
+#loginBox #submitBut:hover
+{
+	background: url(img/LoginBg.png) no-repeat 0px -1015px;
+}
+#loginBox #butLi
+{
+	margin-top: 15px;
+}
+#loginBox li.tc
+{
+	text-align: center;
+}
+
+#loginBox li.tc input
+{
+	width: 20px;
+}
+
+#loginBotLink
+{
+	height: 60px;
+	line-height: 80px;
+	color: #444;
+	text-align: center;
+}
+#loginBotLink a
+{
+	margin: 0px 10px;
+	color: #444;
+}
+#loginBotCprt
+{
+	height: 20px;
+	line-height: 20px;
+	color: #999;
+	text-align: center;
+}
+/*#verImg{width:95px;height:32px;}*/
+
+/*注册*/
+#regTop
+{
+	height: 65px;
+}
+#regTop div
+{
+	float: left;
+}
+#regLogo
+{
+	background: url(img/Logo.png) no-repeat 5px 5px;
+	height: 65px;
+	width: 180px;
+}
+#logoTxt
+{
+	color: #999;
+	margin-top: 8px;
+	border-left: 1px solid #EEE;
+	padding-left: 12px;
+	margin-left: 8px;
+}
+#logoTxt span
+{
+	color: #999;
+}
+#joinLocation
+{
+	background-image: url(img/RegLocation.png);
+	background-repeat: no-repeat;
+	height: 28px;
+	line-height: 28px;
+	margin-top: 20px;
+}
+#joinLocation.loc01
+{
+	background-position: 0 -56px;
+}
+#joinLocation span
+{
+	display: inline-block;
+	width: 117px;
+	height: 28px;
+	text-indent: 35px!important;
+	text-indent: 17px;
+	font-size: 14px;
+	color: #999;
+}
+#joinLocation span.sel
+{
+	color: #AB4400;
+	font-weight: bold;
+}
+#joinMain
+{
+	width: 590px;
+	height: 400px;
+	float: left;
+}
+.inputInfo li
+{
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	margin: 12px 0;
+}
+.inputInfo li input
+{
+	padding: 5px;
+}
+.inputInfo li label
+{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	margin-right: 10px;
+	text-align: right;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.inputInfo li label i
+{
+	font-style: normal;
+	font-size: 14px;
+	margin-right: 10px;
+}
+.inputInfo li.noLabel
+{
+	padding-left: 140px;
+	height: auto;
+}
+.inputInfo li span
+{
+	padding-left: 30px;
+	color: #999;
+}
+.inputButton
+{
+	background-image: url(img/RegBg.png);
+	background-repeat: no-repeat;
+	background-position: 0 -4px;
+	width: 130px;
+	height: 32px;
+	line-height: 20px;
+	border: none;
+	color: #fffff4;
+	font-weight: bold;
+	font-size: 15px;
+}
+.inputButton:hover
+{
+	background-position: 0 -37px;
+	color: #fffff4;
+}
+/*会员注册右侧图片*/
+#regRight
+{
+	background: url(img/RegRightPic.png) no-repeat 0 10px;
+	width: 400px;
+	height: 400px;
+	float: right;
+}
+#regBotLine
+{
+	border-top: 2px #CCC solid;
+	width: 100%;
+	height: 12px;
+}

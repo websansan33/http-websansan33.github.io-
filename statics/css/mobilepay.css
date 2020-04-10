@@ -1,0 +1,151 @@
+/**{
+margin:0;padding:0
+}*/
+ol,ul{
+  list-style: none;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14{
+  float: none;
+}
+.mask{
+  background: #f0eff5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+/*.h1{padding-top:50px}*/
+/*.container{
+width:90%;
+margin:0 auto;
+background:#fff;
+margin-top:5%;
+}*/
+/*.container_logo{
+background:#fbfbfb
+}*/
+.play{
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+/*.play img{
+width: 80%;
+display: block;
+margin: 0 auto;
+}*/
+.number_amount{
+  position: relative;
+  height: 42px;
+}
+.number_amount label{
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  font-size: 24px;
+  left: 0;
+}
+.number_amount input[type="number"]{
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  outline: none;
+  padding: 0 30px;
+}
+.quick_amount{
+  margin: 0 auto;
+  padding: 0;
+}
+.quick_amount p{
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  border: dashed 1px #cecece;
+  color: #888;
+  margin: 10px 3.5%;
+}
+.quick_amount p.active{
+  border: #337ab7 1px solid;
+  color: #337ab7;
+  border-radius: 2px;
+}
+._submit{
+  margin: 30px auto;
+}
+.submit-amount{
+  width: 100%;
+}
+/* .getId{
+display:none;
+} */
+
+/**
+* 支付样式
+*/
+.recharge_way {
+  padding: 0 1rem 1rem;}
+.recharge_way h1{
+  clear: both;
+  font-size: 1.6rem;
+  padding:0.6rem 0;
+  margin:0.6rem 0;
+  color: #2D2D2D;}
+.recharge_way ul li{
+  position: relative;
+  text-align: center;
+  width: 30%;
+  float: left;
+  padding: 0.8rem 0;
+  margin-bottom: 0.5rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 0.4rem;
+  box-sizing: border-box;}
+.recharge_way ul li i{
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  z-index: 9;
+  display: none;}
+.recharge_way ul li i img{
+  width: 100%;}
+.recharge_way ul li img {
+  width: 39px;
+  height: 39px;}
+.recharge_way ul li.active{
+  border: 3px solid #2692F1;
+  box-shadow: 0 5px 15px 1px rgba(38,146,241,0.3);}
+.recharge_way ul li.active i{
+  display: block;}
+.recharge_way ul li span {
+  text-align: center;
+  display: block;
+  color: #2D2D2D;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+/*.recharge_way ul li:nth-of-type(3n+0){
+margin: 0 5%;}*/
+.recharge_way ul li:nth-of-type(2){
+  margin: 0 5%;}
+.recharge_way ul li:nth-of-type(5){
+  margin: 0 5%;}
+/*.recharge_way ul li:nth-of-type(8){
+margin: 0 5%;}
+.recharge_way ul li:nth-of-type(11){
+margin: 0 5%;}
+.recharge_way ul li:nth-of-type(14){
+margin: 0 5%;}*/
+.recharge_way ul li:nth-of-type(4){
+  clear: both;}
+/*.recharge_way ul li:nth-of-type(7){
+clear: both;}*/
+
+/*以下是支付进行中样式*/

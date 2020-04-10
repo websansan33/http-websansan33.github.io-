@@ -1,0 +1,176 @@
+/*@charset "utf-8";*/
+/**{ 
+	margin: 0px; 
+	padding: 0px;
+	font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu }
+em,i{ 
+	font-style: normal}
+li,dd,dt{
+	list-style: none;}
+.fl{ 
+	float: left}
+.rf{ 
+	float: right}*/
+/* border */
+img{
+	border: 0}
+.clear{
+	clear: both;
+	display: block}
+/* link & action */
+a{
+	color: #333;
+	text-decoration: none}
+a:hover{
+	text-decoration: none;
+	color: #F81800;}
+
+/*#bankList{width:auto;height:auto;overflow:hidden;margin:0px;padding:0px;text-indent:0px;margin-top:30px;}
+#bankList li{margin:0px;padding:0px;list-style:none;float:left;margin-right:20px;height:40px;line-height:40px;}
+#bankList img{cursor:pointer;border:3px #EEEEEE solid;padding:1px;background-color:#FFFFFF}
+#bankList img:hover{border:3px #FF0000 solid;}
+#bankList .selImg{border:3px #FF9900 solid;}*/
+.userMain{
+	padding: 5px 0;
+	display: inline-table;}
+.userMain div{
+	margin: 10px 20px;
+	font-size: 15px;
+	}
+#msg{
+	text-align: left;
+	float: none;
+	clear: both;
+	border-top: 1px solid #CCC;
+	padding: 10px 0;}
+#msg span{
+	color: red;
+	font-size: 15px;}
+.inputButton{
+	padding: 3px 20px;
+	margin-left:40px;
+	font-size: 15px;
+	}
+#deposit{
+	color: red;
+	font-size: 15px;
+	padding: 3px;}
+.depInput{
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 20px;}
+.depInput span{
+	margin-left: 20px;
+	font-size: 14px;}
+.depInput b{
+	margin: 0 2px;
+	color: #F60;}
+
+
+.pay{ 
+	width: 100%; 
+	margin: 0; 
+	display: table}
+/*margin:50px auto 180px auto;*/
+/*.pay .title{ background:#EDF6FC; border-radius:10px; padding:20px 30px; border-bottom:5px #D2E0E9 solid; font-size:14px}
+.pay .title span{ margin-right:60px}
+.pay .title span em{ font-size:20px; font-weight:700; color:#FF7200}*/
+
+.pay .bank{ 
+	width: 100%; 
+	display: table; 
+	margin-top: 10px}
+.pay .bank .tab_menu{
+	width: 100%;
+	height: 36px; 
+	position: relative;
+	border-bottom: 1px #795339 solid;
+	/*border-left: 1px #6C9BC7 solid;*/
+	}
+.pay .bank .tab_menu ul{ 
+	height: 36px; 
+	width: 100%; 
+	position: absolute; 
+	left: 0px; 
+	bottom: 0px}
+.pay .bank .tab_menu li{
+	width: 82px;
+	float: left;
+	height: 34px;
+	line-height: 34px;
+	color: #795339;
+	text-align: center;
+	cursor: pointer; 
+	/*background: url(../../images/t01.png) no-repeat left bottom; */
+	background:url("img/fix/ssq_btns.png") no-repeat scroll -328px -180px;
+	font-size: 14px; 
+	font-weight: 700;
+	margin-right: 2px;
+	/*border-right: 1px #6C9BC7 solid;
+	border-top: 1px #6C9BC7 solid;*/
+}
+.pay .bank .tab_menu li.current{
+	color: #FFF;
+	/*background:#6C9BC7 url(../../images/d.jpg) no-repeat center bottom*/
+	height: 34px;
+	line-height: 34px;
+	background: url("img/fix/ssq_btns.png") no-repeat scroll -328px -146px;
+	border-bottom: none;
+}
+
+.pay .bank .tab_box{ 
+	border: 1px #795339 solid;
+	border-top: 0px; 
+	width: 100%; 
+	padding-top: 15px;
+	display: table}
+/*width:1192px;*/
+.pay .bank .tab_box .hide{
+	display: none;}
+
+.pay .bank .tab_box .zhifu{ 
+	display: table; 
+	width: 100%}
+.pay .bank .tab_box .zhifu label{ 
+	display: block;
+	cursor: pointer; 
+	vertical-align: middle; 
+	width: 188px; 
+	float: left; 
+	margin: 5px 0px 5px 16px}
+
+.pay .bank .tab_box img{
+	vertical-align: middle; 
+	margin-left: 8px}
+.pay .bank .tab_box .qita{ 
+	padding-left: 35px; 
+	width: 100%; 
+	display: table; 
+	margin: 20px 0px}
+.pay .bank .tab_box .qita .tit{ 
+	color: #0066FF; 
+	font-size: 12px;}
+.pay .bank .tab_box .qita .tit em{ 
+	display: block; 
+	background: url(../../images/d1.jpg) no-repeat 50px center}
+.pay .bank .tab_box .car{ 
+	line-height: 30px; 
+	font-size: 14px; 
+	color: #545454; 
+	padding-left: 25px;}
+/*.pay .bank .tab_box .car label{ 
+	margin-right: 20px}*/
+.pay .bank .tab_box .zhifu label p{ 
+	padding-left:27px;}
+/*.pay .bank .tab_box .btn{ 
+	padding-left: 20px; 
+	height: 50px; 
+	margin: 30px 0px 100px 0px}*/
+/*.pay .bank .tab_box .btn a{ 
+	width: 144px; 
+	height: 44px; 
+	color: #FFF; 
+	line-height: 44px; 
+	background: url(../../images/next.png) no-repeat; 
+	display: block; 
+	text-indent: 30px; 
+	font-size: 16px}*/
