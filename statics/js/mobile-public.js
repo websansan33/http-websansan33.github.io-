@@ -1,4 +1,32 @@
-﻿String.prototype.myTrim = function()
+﻿
+
+$.getMultiScripts = function(arr, path) {
+  var _arr = $.map(arr, function(scr) {
+      return $.getScript((path||"") + scr);
+    });
+
+  _arr.push($.Deferred(function(deferred){
+        $(deferred.resolve);
+      }));
+
+  return $.when.apply($, _arr);
+}
+
+/*
+var script_arr = [
+'myscript1.js',
+'myscript2.js',
+'myscript3.js'];
+$.getMultiScripts(script_arr,'/myjspath/').done(function() {
+// all done
+}).fail(function(error) {
+// one or more scripts failed to load
+}).always(function() {
+// always called, both on success and error
+});
+*/
+
+String.prototype.myTrim = function()
 {
   var lines = new Array();
   lines = this.split("\n"); // 按行分隔处理，否则 /\s/g 可能会匹配到换行符
@@ -658,35 +686,35 @@ panel.className = (t == false && (!isContains(o,e,3))) ? "hidden" : "";
 /*
 function showUserMoneyn()
 {
-  //显示用户可用余额
-  $("#userMoney").html("正在查询...");
-  doAjax(
-    "/public/check.php?" + Math.random(),
-    "",
-    "json",
-    function (json)
-    {
+//显示用户可用余额
+$("#userMoney").html("正在查询...");
+doAjax(
+"/public/check.php?" + Math.random(),
+"",
+"json",
+function (json)
+{
 
-      if(json.res==1)
-      {
-        $("#userMoney").html("请先登录...");
-        if(showLoginPanle()) return;
-      }
-      else
-      {
-        $("#userMoney").html(json.allmoney);
+if(json.res==1)
+{
+$("#userMoney").html("请先登录...");
+if(showLoginPanle()) return;
+}
+else
+{
+$("#userMoney").html(json.allmoney);
 
-      }
-    },true);//fixdoAjax
+}
+},true);//fixdoAjax
 
 }
 */
 /*
 function setImgErr(o)
 {
-  //错误图片处理
-  //o.style.visibility = "hidden";
-  o.src = "/Media/Gif/ImErrIcon.gif";
+//错误图片处理
+//o.style.visibility = "hidden";
+o.src = "/Media/Gif/ImErrIcon.gif";
 }
 */
 //function wait()
